@@ -61,8 +61,8 @@ class DataRetriever():
 		return primerblast_results
 
 	def get_mismatch_info(self, binded_primer, original_primer):
-		print(binded_primer)
-		print(original_primer)
+		# print(binded_primer)
+		# print(original_primer)
 		mismatched_primer = ''
 		mismatches = 0
 		mismatched_positions = []

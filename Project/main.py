@@ -178,7 +178,7 @@ def run_from_input(primers_dir):
 
 
 if __name__ == '__main__':
-	primers_dir = 'Primers'
+	primers_dir = 'Primers_Plantas'
 	run_from_input(primers_dir)
 
 # tem uns primers com um traço na frente, o que é esse traço?

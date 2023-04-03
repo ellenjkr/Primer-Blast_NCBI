@@ -5,12 +5,18 @@ class DataBaseSearch():
 	def __init__(self, default_tax_tags):
 		super(DataBaseSearch, self).__init__()
 		self.default_tax_tags = default_tax_tags
-		
-	def get_organism_taxid(self, cursor, organism):
-		cursor.execute(f"SELECT * FROM names WHERE name_txt LIKE '%{organism}%' AND name_class = 'scientific name' LIMIT 1")
-		taxid = cursor.fetchone()['tax_id']
 
-		return taxid
+	def get_organism_taxid(self, cursor, organism):
+		cursor.execute(f"SELECT * FROM names WHERE name_txt = '{organism}' LIMIT 1")
+		result = cursor.fetchone()
+		if result is None:
+			cursor.execute(f"SELECT * FROM names WHERE MATCH(name_txt) AGAINST('{organism}' IN NATURAL LANGUAGE MODE)")
+			result = cursor.fetchone()
+
+		taxid = result['tax_id']
+		name_txt = result['name_txt']
+
+		return taxid, name_txt
 
 
 	def get_organism_data(self, cursor, organism):
@@ -23,7 +29,7 @@ class DataBaseSearch():
 		connection = pymysql.connect(
 			host='localhost',
 			user='root',
-			password='batata2000',
+			password='Amora#1000',
 			database='ncbi_data',
 			cursorclass=pymysql.cursors.DictCursor
 		)
@@ -36,34 +42,12 @@ class DataBaseSearch():
 					occurrence = arguments[1]
 
 					print(f"Obtendo a taxonomia de '{organism_name}'")
-					organism_taxid = self.get_organism_taxid(cursor, organism_name)
+					organism_taxid, name_txt = self.get_organism_taxid(cursor, organism_name)
+					cursor.execute(f"SELECT * FROM organisms WHERE tax_id = {organism_taxid} LIMIT 1")
+					result = cursor.fetchone()
 
-					taxids = []
-					taxids.append(organism_taxid)
-
-					taxonomy = {}
-					result = self.get_organism_data(cursor, organism_taxid)
-
-					rank = result['_rank']
-					taxonomy[rank] = organism_taxid
-
-					while int(result['parent_taxnodes_id']) != 1:
-						organism_taxid = result['parent_taxnodes_id']
-						taxids.append(organism_taxid)
-
-						result = self.get_organism_data(cursor, organism_taxid)
-						rank = result['_rank']
-						if rank in self.default_tax_tags:
-							taxonomy[rank] = organism_taxid
-
-
-
-					cursor.execute(f"SELECT name_txt, tax_id FROM names WHERE tax_id IN {tuple(taxids)} AND name_class = 'scientific name'")
-					names = cursor.fetchall()
-					
-					taxid2name = {list(i.values())[1]: list(i.values())[0] for i in names}
 					output_dict = {'Nome': organism_name, 'Ocorrência': occurrence}
-					output_dict.update({key: (taxid2name[taxonomy[key]] if key in taxonomy.keys() else None) for key in self.default_tax_tags})
+					output_dict.update(result)
 					# output_dict.update({taxonomy[key]: taxid2name[key] for key in taxonomy.keys() if taxonomy[key] in self.self.default_tax_tags})
 
 					return output_dict
