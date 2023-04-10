@@ -39,7 +39,7 @@ class DataRetriever():
 		job_key = parser.find("input", {"name":"job_key"}).attrs['value']
 		ctg_time = parser.find("input", {"name":"ctg_time"}).attrs['value']
 		# ctg_time = None
-		# job_key = 'PTfik9Yz25v8pcGgzMDlkrbb9KCbyO-9mg'
+		# job_key = 'YWu-7qMarrKJjLSJuemQu8PygYnu4ZqU7w'
 		return (job_key, ctg_time)
 
 	def get_results_content(self, job_key):
@@ -79,7 +79,7 @@ class DataRetriever():
 
 
 	def get_binding_info(self, organism_binding):
-		print(organism_binding)
+
 		length = re.search(r'(product length = )(\d*)' , organism_binding).group(2)
 		# primers = re.findall(r'(Template \s*)(\d*\s*)([\.A-Z]*)' , organism_binding)
 
@@ -181,6 +181,7 @@ class DataRetriever():
 
 
 	def get_taxonomy(self, organisms_names):
+		print('Obtendo as taxonomias dos resultados')
 		output_dict = {key: [] for key in self.default_tax_tags}
 		output_dict['Nome'] = []
 		output_dict['Ocorrência'] = []
@@ -195,6 +196,9 @@ class DataRetriever():
 
 		second_column = output_df.pop('Ocorrência')
 		output_df.insert(1, 'Ocorrência', second_column)
+
+		output_df.drop(columns='species', inplace=True)
+		output_df.rename(columns={'tax_name': 'species'}, inplace=True)
 
 		return output_df
 

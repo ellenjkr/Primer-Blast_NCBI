@@ -41,12 +41,13 @@ class DataBaseSearch():
 					organism_name = arguments[0]
 					occurrence = arguments[1]
 
-					print(f"Obtendo a taxonomia de '{organism_name}'")
+					# print(f"Obtendo a taxonomia de '{organism_name}'")
 					organism_taxid, name_txt = self.get_organism_taxid(cursor, organism_name)
 					cursor.execute(f"SELECT * FROM organisms WHERE tax_id = {organism_taxid} LIMIT 1")
 					result = cursor.fetchone()
-
+					
 					output_dict = {'Nome': organism_name, 'Ocorrência': occurrence}
+
 					output_dict.update(result)
 					# output_dict.update({taxonomy[key]: taxid2name[key] for key in taxonomy.keys() if taxonomy[key] in self.self.default_tax_tags})
 
