@@ -1,0 +1,1391 @@
+ï»¿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="animation:'none'" name="ncbitoggler"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="primerblast" name="ncbi_app"/>
+  <meta content="blastresults" name="ncbi_pdid"/>
+  <meta content="blastn" name="ncbi_program"/>
+  <meta content="nt" name="ncbi_db"/>
+  <meta content="0751390E535A1081_0000SID" name="ncbi_sessionid"/>
+  <meta content="9CAA5268535A10810000000000000001" name="ncbi_phid"/>
+  <script type="text/javascript">
+   var ncbi_startTime = new Date();
+  </script>
+  <title>
+   Primer-Blast results
+  </title>
+  <!-- style -->
+  <meta content="no-cache" http-equiv="Pragma"/>
+  <link href="css/uswds.min.css" media="screen" rel="stylesheet" type="text/css"/>
+  <!--<link rel="stylesheet"  type="text/css" href="https://www.ncbi.nlm.nih.gov/style-guide/static/nwds/css/nwds.css"/>-->
+  <link href="css/nwds.css" rel="stylesheet" type="text/css"/>
+  <link href="css/header.css" rel="stylesheet"/>
+  <link href="css/footer.css" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet"/>
+  <!-- Font Awesome icons -->
+  <link href="css/footer.css" media="screen" rel="stylesheet" type="text/css">
+   <link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
+   <link href="css/results.css" media="screen" rel="stylesheet" type="text/css"/>
+   <!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
+<![endif]-->
+   <!-- js files for title filling -->
+   <script src="js/utils.js" type="text/javascript">
+   </script>
+   <script src="/core/jig/1.15.2/js/jig.min.js" type="text/javascript">
+   </script>
+   <script src="js/remote_data_provider.js" type="text/javascript">
+   </script>
+   <script src="js/results.js" type="text/javascript">
+   </script>
+   <!-- JavaScript for Sequence Viewer integration -->
+   <script id="autoload" src="/projects/sviewer/js/sviewer.js" type="text/javascript">
+   </script>
+   <!-- reset some setting that were overwritten by ncbi_templates.css  -->
+   <style type="text/css">
+    h2 {margin: 0;}
+  a.x-menu-item { color:#222222; }
+   </style>
+  </link>
+ </head>
+ <body class="" id="type-a">
+  <div id="wrap">
+   <script>
+    var useOfficialGovtHeader = true;
+   </script>
+   <section class="usa-banner">
+    <div class="usa-accordion">
+     <header class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner">
+       <img alt="U.S. flag" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/favicons/favicon-57.png"/>
+       <p>
+        An official website of the United States government
+       </p>
+       <button aria-controls="gov-banner-top" aria-expanded="false" class="usa-accordion-button usa-banner-button">
+        <span class="usa-banner-button-text">
+         Here's how you know
+        </span>
+       </button>
+      </div>
+     </header>
+     <div aria-hidden="true" class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner-top">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+       <img alt="Dot gov" class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-dot-gov.svg"/>
+       <div class="usa-media_block-body">
+        <p>
+         <strong>
+          The .gov means itâs official.
+         </strong>
+         <br/>
+         Federal government websites often end in .gov or .mil. Before
+            sharing sensitive information, make sure youâre on a federal
+            government site.
+        </p>
+       </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+       <img alt="Https" class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-https.svg"/>
+       <div class="usa-media_block-body">
+        <p>
+         <strong>
+          The site is secure.
+         </strong>
+         <br/>
+         The
+         <strong>
+          https://
+         </strong>
+         ensures that you are connecting to the
+            official website and that any information you provide is encrypted
+            and transmitted securely.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <header class="ncbi-header" data-section="Header" role="banner">
+    <a class="usa-skipnav" href="#mainCont">
+     Skip to main page content
+    </a>
+    <div class="usa-grid">
+     <div class="usa-width-one-whole">
+      <div class="ncbi-header__logo">
+       <a aria-label="NCBI Logo" class="logo" data-ga-action="click_image" data-ga-label="NIH NLM Logo" href="https://www.ncbi.nlm.nih.gov/">
+        <img alt="NIH NLM Logo" src="https://www.ncbi.nlm.nih.gov/coreutils/nwds/img/logos/AgencyLogo.svg"/>
+       </a>
+      </div>
+      <div class="ncbi-header__account">
+       <a class="usa-button header-button" href="https://www.ncbi.nlm.nih.gov/account/?back_url=https%3A%2F%2Fwww%2Encbi%2Enlm%2Enih%2Egov%2Ftools%2Fprimer%2Dblast%2Findex%2Ecgi" id="account_login">
+        Log in
+       </a>
+       <button aria-controls="account_popup" class="header-button" id="account_info">
+        <span aria-hidden="true" class="fa fa-user">
+        </span>
+        <span aria-hidden="true" class="username desktop-only" id="uname_short">
+        </span>
+        <span class="sr-only">
+         Show account info
+        </span>
+       </button>
+      </div>
+      <div class="ncbi-popup-anchor">
+       <div aria-hidden="true" aria-labelledby="account-popup-header" class="ncbi-popup account-popup" id="account_popup" role="dialog">
+        <div class="ncbi-popup-head">
+         <button class="ncbi-close-button">
+          <span class="fa fa-window-close">
+          </span>
+          <span class="usa-sr-only">
+           Close
+          </span>
+         </button>
+         <h4>
+          Account
+         </h4>
+        </div>
+        <div class="account-user-info">
+         Logged in as:
+         <br/>
+         <b>
+          <span class="username" id="uname_long">
+           username
+          </span>
+         </b>
+        </div>
+        <div class="account-links">
+         <ul class="usa-unstyled-list">
+          <li>
+           <a href="https://www.ncbi.nlm.nih.gov/myncbi/" id="account_myncbi">
+            Dashboard
+           </a>
+           <span class="ncbi-text-small-light">
+            (My NCBI)
+           </span>
+          </li>
+          <li>
+           <a href="https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/" id="account_pubs">
+            Publications
+           </a>
+           <span class="ncbi-text-small-light">
+            (My Bibliography)
+           </span>
+          </li>
+          <li>
+           <a href="https://www.ncbi.nlm.nih.gov/account/settings/" id="account_settings">
+            Account settings
+           </a>
+          </li>
+          <li>
+           <a href="https://www.ncbi.nlm.nih.gov/account/signout/?back_url=https%3A%2F%2Fwww%2Encbi%2Enlm%2Enih%2Egov%2Ftools%2Fprimer%2Dblast%2Findex%2Ecgi" id="account_logout">
+            Log out
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </header>
+   <div aria-label="access keys" role="navigation">
+    <a accesskey="0" class="usa-sr-only" href="https://www.ncbi.nlm.nih.gov/guide/browsers/#ncbi_accesskeys" id="nws_header_accesskey_0" tabindex="-1">
+     Access keys
+    </a>
+    <a accesskey="1" class="usa-sr-only" href="https://www.ncbi.nlm.nih.gov" id="nws_header_accesskey_1" tabindex="-1">
+     NCBI Homepage
+    </a>
+    <a accesskey="2" class="set-base-url usa-sr-only" href="/myncbi/" id="nws_header_accesskey_2" tabindex="-1">
+     MyNCBI Homepage
+    </a>
+    <a accesskey="3" class="usa-sr-only" href="#maincontent" id="nws_header_accesskey_3" tabindex="-1">
+     Main Content
+    </a>
+    <a accesskey="4" class="usa-sr-only" href="#" id="nws_header_accesskey_4" tabindex="-1">
+     Main Navigation
+    </a>
+   </div>
+   <nav class="ncbi-topnav" id="navcontent">
+    <div class="usa-grid">
+     <span class="lf">
+      <a class="lfa" href="index.cgi">
+       Primer-BLAST
+      </a>
+      <span class="brc">
+       <span class="brcrmbsign">
+        »
+       </span>
+       JOB ID:Iyn9S5VxmNm_553ikIK50OqZqOLHirP_xg
+      </span>
+     </span>
+     <span id="brc">
+     </span>
+     <span class="rf">
+     </span>
+    </div>
+   </nav>
+   <div class="" id="banner_ad">
+    <div>
+     <div>
+      <i class="fas fa-user-friends">
+      </i>
+      <span>
+       <a class="jt" href="mailto:blast-help@ncbi.nlm.nih.gov?subject=PrimerBLAST user research.&amp;body=Please contact me to discuss PrimerBLAST and how it can be improved." id="jt" target="hlp">
+        PrimerBLAST users!
+       </a>
+      </span>
+     </div>
+     <div class="help">
+      We want to hear from you about how PrimerBLAST can be improved.
+     </div>
+    </div>
+    <input class="sbt" id="btnJt" src="" type="button" value="Contact us"/>
+    <button aria-controls="banner_ad" blastspec="primertool" class="close" id="closeAd" pagetype="" program="">
+     <i class="fas fa-times">
+     </i>
+    </button>
+   </div>
+   <div id="content-wrap">
+    <div class="pageTitle">
+     Primer-BLAST Results
+     <a class="helplink jig-ncbitoggler ui-ncbitoggler" data-jig="ncbitoggler" data-ncbitoggler-toggles="hlp11" href="#" id="dnHelp" title="Primer-BLAST help">
+      <i class="fas fa-question-circle">
+      </i>
+      <span class="usa-sr-only">
+       Help
+      </span>
+     </a>
+     <div aria-live="assertive" class="ui-helper-reset">
+      <div class="helpbox ui-ncbitoggler-slave" id="hlp11">
+       <p>
+        Primer-BLAST was developed at NCBI to help users make primers that are specific
+            to intended PCR target.  It uses
+        <a href="http://primer3.wi.mit.edu/">
+         Primer3
+        </a>
+        to design PCR primers and then uses 
+            BLAST and global alignment algorithm to screen primers against user-selected database
+            in order to avoid primer pairs (all combinations including forward-reverse primer pair,
+            forward-forward as well as reverse-reverse pairs) that can cause non-specific amplifications. 
+            To cite Primer-BLAST or look for more details, please consult our publication:
+       </p>
+       <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=22708584">
+        Ye J, Coulouris G, Zaretskaya I, Cutcutache I, Rozen S, Madden T (2012).
+            Primer-BLAST: A tool to design target-specific primers for polymerase chain reaction.
+            BMC Bioinformatics. 13:134.
+       </a>
+       Use of Primer3 itself is subject to the terms and conditions stated on
+       <a href="http://primer3.wi.mit.edu/">
+        Primer3 web site
+       </a>
+       .
+      </div>
+     </div>
+    </div>
+    <div id="content">
+     <ul class="msg">
+      <li class="">
+       <p class="">
+       </p>
+      </li>
+     </ul>
+     <div class="">
+      <div id="summary">
+       <div class="paramSummary">
+        <dl>
+         <dt>
+          Input PCR template
+         </dt>
+         <dd>
+          none
+         </dd>
+         <dt>
+          Specificity of primers
+         </dt>
+         <dd>
+          Target templates were found in selected database: Nucleotide collection (nt)
+         </dd>
+         <dt>
+          Other reports
+         </dt>
+         <dd>
+          <a class="resArrowLinkB jtg jig-ncbitoggler ui-ncbitoggler" data-ncbitoggler-toggles="resStat" href="#" id="showStat" title="Show statistics">
+           Search Summary
+          </a>
+         </dd>
+        </dl>
+       </div>
+       <div aria-live="assertive" class="ui-helper-reset">
+        <div class="helpbox helpbox ui-ncbitoggler-slave" id="resStat">
+         <table class="searchInfo" id="params">
+          <caption>
+           Search parameters and other details
+          </caption>
+          <tr>
+           <th>
+            <div>
+             Search parameter name
+            </div>
+           </th>
+           <th>
+            <div>
+             Search parameter value
+            </div>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            Number of Blast hits analyzed
+           </td>
+           <td>
+            120594
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Entrez query
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min total mismatches
+           </td>
+           <td>
+            1
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min 3' end mismatches
+           </td>
+           <td>
+            2
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Defined 3' end region length
+           </td>
+           <td>
+            5
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Mismatch threshold to ignore targets
+           </td>
+           <td>
+            6
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max target size
+           </td>
+           <td>
+            4000
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max number of Blast target sequences
+           </td>
+           <td>
+            100000
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Blast E value
+           </td>
+           <td>
+            30000
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Blast word size
+           </td>
+           <td>
+            7
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max candidate primer pairs
+           </td>
+           <td>
+            500
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min PCR product size
+           </td>
+           <td>
+            61
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max PCR product size
+           </td>
+           <td>
+            3000
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min Primer size
+           </td>
+           <td>
+            15
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Opt Primer size
+           </td>
+           <td>
+            20
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max Primer size
+           </td>
+           <td>
+            25
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min Tm
+           </td>
+           <td>
+            57
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Opt Tm
+           </td>
+           <td>
+            60
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max Tm
+           </td>
+           <td>
+            63
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max Tm difference
+           </td>
+           <td>
+            3
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Repeat filter
+           </td>
+           <td>
+            AUTO
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Low complexity filter
+           </td>
+           <td>
+            Yes
+           </td>
+          </tr>
+         </table>
+        </div>
+        <!-- resStat -->
+       </div>
+       <!-- aria end -->
+      </div>
+      <!--RID=  KB889U1Z011 group rid:  -->
+      <div class="usa-accordion">
+      </div>
+      <div class="usa-accordion">
+       <button aria-controls="alignInfo" aria-expanded="true" class="usa-accordion-button sectAccordion">
+        Detailed primer reports
+        <i aria-hidden="true" class="fa fa-plus ncbi-button-icon">
+        </i>
+        <i aria-hidden="true" class="fa fa-minus ncbi-button-icon">
+        </i>
+       </button>
+       <div aria-hidden="false" class="resBox usa-accordion-content" id="alignInfo">
+        <form action="./primertool.cgi" id="reanalysisform" method="post" name="reanalysisform">
+         <div class="hidden reanlz">
+          <span>
+           You can re-search for specific primers by accepting some of the unintended targets, check the box(es) next to the ones you accept and try again to re-search for specific primers
+          </span>
+          <span>
+           <input class="submReanl" disabled="disabled" id="submReanl1" type="submit" value="Submit"/>
+          </span>
+          <a class="helplink jig-ncbitoggler ui-ncbitoggler" data-jig="ncbitoggler" data-ncbitoggler-toggles="submReanlHelp1" href="#" title="Primer-BLAST help">
+           <i class="fas fa-question-circle">
+           </i>
+           <span class="usa-sr-only">
+            Help
+           </span>
+          </a>
+          <div aria-live="assertive" class="ui-helper-reset">
+           <div class="helpbox ui-ncbitoggler-slave" id="submReanlHelp1">
+            <p>
+             Primer-BLAST can only find non-specific primers for your template since there are other targets that are similar or identical to your template.  You may choose to re-search for specific primers by allowing some of the highly similar off-targets if they are irrelevant to your PCR experiment.  For example, not all transcript variants are expressed in all tissues, or you are not concerned about the predicted transcripts (i.e., XM_ accessions), or there are redundant database entries.  Another example is, when you enter a raw sequence as PCR template rather than an accession, Primer-BLAST will likely report many off-targets.  However, some of these might be your intended target that you should choose to allow.  When Primer-BLAST does not need to avoid the highly similar off-targets in selecting unique primer regions, it typically has a much higher chance to find specific primers for your intended target.
+            </p>
+           </div>
+          </div>
+         </div>
+        </form>
+        <div class="blRes" id="alignments">
+         <div class="prPairInfo">
+          <a name="0">
+          </a>
+          <h2>
+           Primer pair 1
+          </h2>
+          <table>
+           <tr>
+            <th>
+            </th>
+            <th>
+             Sequence (5'-&gt;3')
+            </th>
+            <th>
+             Length
+            </th>
+            <th>
+             Tm
+            </th>
+            <th>
+             GC%
+            </th>
+            <th>
+             Self complementarity
+            </th>
+            <th>
+             Self 3' complementarity
+            </th>
+           </tr>
+           <tr>
+            <th>
+             Forward primer
+            </th>
+            <td>
+             AGGGCAATCCTGGTGCCAGC
+            </td>
+            <td>
+             20
+            </td>
+            <td>
+             65.31
+            </td>
+            <td>
+             65.00
+            </td>
+            <td>
+             6.00
+            </td>
+            <td>
+             4.00
+            </td>
+           </tr>
+           <tr>
+            <th>
+             Reverse primer
+            </th>
+            <td>
+             GCAATTCACACCAAGTATCGC
+            </td>
+            <td>
+             21
+            </td>
+            <td>
+             58.21
+            </td>
+            <td>
+             47.62
+            </td>
+            <td>
+             4.00
+            </td>
+            <td>
+             2.00
+            </td>
+           </tr>
+          </table>
+          <div class="hidden">
+           <div class="prPairTl">
+            Products on intended targets
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+           </div>
+          </div>
+          <div class="hidden">
+           <div class="prPairTl">
+            Products on allowed targets
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+           </div>
+          </div>
+          <div class="hidden">
+           <div class="prPairTl">
+            Products on allowed transcript variants
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+           </div>
+          </div>
+          <div class="hidden">
+           <div class="prPairTl">
+            Products on potentially unintended templates
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+           </div>
+          </div>
+          <div class="hidden shown">
+           <div class="prPairTl">
+            Products on target templates
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2523335134?from=32820976&amp;to=34555142&amp;report=gbwithparts" target="new_entrez">
+             OX940789.1
+            </a>
+            Trifolium fragiferum genome assembly, chromosome: 1
+            <pre>
+
+product length = 3304
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        34555142  .....................  34555122
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        34551839  .....................  34551859
+
+</pre>
+            <pre>
+
+product length = 2876
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        33999643  .....................  33999623
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        33996768  .....................  33996788
+
+</pre>
+            <pre>
+
+product length = 1602
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        33365855  .....................  33365835
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        33364254  .....................  33364274
+
+</pre>
+            <pre>
+
+product length = 2516
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        32823491  .....................  32823471
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        32820976  .....................  32820996
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546768145?from=44853246&amp;to=44854902&amp;report=gbwithparts" target="new_entrez">
+             OY288242.1
+            </a>
+            Agrostemma githago genome assembly, chromosome: 4
+            <pre>
+
+product length = 1657
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        44854902  .....................  44854882
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        44853246  .....................  44853266
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2321928949?from=19943119&amp;to=19947081&amp;report=gbwithparts" target="new_entrez">
+             OX359264.1
+            </a>
+            Hedera helix genome assembly, chromosome: 1
+            <pre>
+
+product length = 3963
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        19947081  .....................  19947061
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        19943119  .....................  19943139
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2575820066?from=46627317&amp;to=46777669&amp;report=gbwithparts" target="new_entrez">
+             OY730198.1
+            </a>
+            Pseudognaphalium luteoalbum genome assembly, chromosome: 7
+            <pre>
+
+product length = 2855
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        46777669  .....................  46777649
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        46774815  .....................  46774835
+
+</pre>
+            <pre>
+
+product length = 1658
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        46628974  .....................  46628954
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        46627317  .....................  46627337
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2512878237?from=36139832&amp;to=37711676&amp;report=gbwithparts" target="new_entrez">
+             OX638062.1
+            </a>
+            Trifolium dubium genome assembly, chromosome: 1
+            <pre>
+
+product length = 1030
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        37711676  .....................  37711656
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        37710647  .....................  37710667
+
+</pre>
+            <pre>
+
+product length = 3803
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        36143634  .....................  36143614
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        36139832  .....................  36139852
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2511383461?from=9623176&amp;to=9624927&amp;report=gbwithparts" target="new_entrez">
+             OX637673.1
+            </a>
+            Populus nigra genome assembly, chromosome: 2
+            <pre>
+
+product length = 1752
+Reverse primer  1        GCAATTCACACCAAGTATCGC  21
+Template        9624927  .....................  9624907
+
+Reverse primer  1        GCAATTCACACCAAGTATCGC  21
+Template        9623176  .....................  9623196
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2510678853?from=17085771&amp;to=17086465&amp;report=gbwithparts" target="new_entrez">
+             OX637466.1
+            </a>
+            Trifolium subterraneum genome assembly, chromosome: 6
+            <pre>
+
+product length = 695
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        17086465  .....................  17086445
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        17085771  .....................  17085791
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2279796753?from=14487089&amp;to=14490000&amp;report=gbwithparts" target="new_entrez">
+             CP086756.1
+            </a>
+            Arabidopsis thaliana ecotype 1254 chromosome 3 sequence
+            <pre>
+
+product length = 2912
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        14490000  .....................  14489980
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        14487089  .....................  14487109
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2279796748?from=13611189&amp;to=13613896&amp;report=gbwithparts" target="new_entrez">
+             CP086751.1
+            </a>
+            Arabidopsis thaliana ecotype 5856 chromosome 3 sequence
+            <pre>
+
+product length = 2708
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        13613896  .....................  13613876
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        13611189  .....................  13611209
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2523336869?from=86143&amp;to=371401&amp;report=gbwithparts" target="new_entrez">
+             OX940868.1
+            </a>
+            Parietaria judaica genome assembly, chromosome: 9
+            <pre>
+
+product length = 2704
+Forward primer  1       AGGGCAATCCTGGTGCCAGC  20
+Template        371401  ........T...........  371382
+
+Reverse primer  1       GCAATTCACACCAAGTATCGC  21
+Template        368698  .....................  368718
+
+</pre>
+            <pre>
+
+product length = 3422
+Forward primer  1      AGGGCAATCCTGGTGCCAGC  20
+Template        89564  ........T...........  89545
+
+Reverse primer  1      GCAATTCACACCAAGTATCGC  21
+Template        86143  .....................  86163
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546771426?from=18518378&amp;to=18555048&amp;report=gbwithparts" target="new_entrez">
+             OY288254.1
+            </a>
+            Agrostemma githago genome assembly, chromosome: 16
+            <pre>
+
+product length = 1563
+Forward primer  1         AGGGCAATCCTGGTGCCAGC  20
+Template        18518378  .......G............  18518397
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        18519940  .....................  18519920
+
+</pre>
+            <pre>
+
+product length = 1563
+Forward primer  1         AGGGCAATCCTGGTGCCAGC  20
+Template        18555048  .......G............  18555029
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        18553486  .....................  18553506
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546771420?from=34552030&amp;to=34553592&amp;report=gbwithparts" target="new_entrez">
+             OY288248.1
+            </a>
+            Agrostemma githago genome assembly, chromosome: 10
+            <pre>
+
+product length = 1563
+Forward primer  1         AGGGCAATCCTGGTGCCAGC  20
+Template        34553592  .......G............  34553573
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        34552030  .....................  34552050
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1828166817?from=33645533&amp;to=33647101&amp;report=gbwithparts" target="new_entrez">
+             AP022634.1
+            </a>
+            Lotus japonicus B-129 DNA, chromosome 6, complete sequence
+            <pre>
+
+product length = 1569
+Forward primer  1         AGGGCAATCCTGGTGCCAGC  20
+Template        33645533  ........T...........  33645552
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        33647101  .....................  33647081
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067584171?from=22816385&amp;to=22901996&amp;report=gbwithparts" target="new_entrez">
+             LS974625.2
+            </a>
+            Brassica rapa genome assembly, chromosome: A09
+            <pre>
+
+product length = 1591
+Features associated with this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067584171?from=22813159&amp;to=22937665&amp;report=gbwithparts" target="new_entrez">unnamed protein product</a>
+
+Forward primer  1         AGGGCAATCCTGGTGCCAGC  20
+Template        22901996  ........T...........  22901977
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        22900406  .....................  22900426
+
+</pre>
+            <pre>
+
+product length = 1592
+Features associated with this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067584171?from=22813159&amp;to=22937665&amp;report=gbwithparts" target="new_entrez">unnamed protein product</a>
+
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067584171?from=22884578&amp;to=22898426&amp;report=gbwithparts" target="new_entrez">unnamed protein product</a>
+
+Forward primer  1         AGGGCAATCCTGGTGCCAGC  20
+Template        22892182  ........T...........  22892163
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        22890591  .....................  22890611
+
+</pre>
+            <pre>
+
+product length = 1591
+Features associated with this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067584171?from=22813159&amp;to=22937665&amp;report=gbwithparts" target="new_entrez">unnamed protein product</a>
+
+Forward primer  1         AGGGCAATCCTGGTGCCAGC  20
+Template        22827782  ........T...........  22827763
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        22826192  .....................  22826212
+
+</pre>
+            <pre>
+
+product length = 1592
+Features associated with this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067584171?from=22813159&amp;to=22937665&amp;report=gbwithparts" target="new_entrez">unnamed protein product</a>
+
+Forward primer  1         AGGGCAATCCTGGTGCCAGC  20
+Template        22817976  ........T...........  22817957
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        22816385  .....................  22816405
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067560823?from=6710681&amp;to=6712271&amp;report=gbwithparts" target="new_entrez">
+             LS974620.2
+            </a>
+            Brassica rapa genome assembly, chromosome: A04
+            <pre>
+
+product length = 1591
+Features flanking this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067560823?from=6672302&amp;to=6672490&amp;report=gbwithparts" target="new_entrez">38192 bp at 5' side: unnamed protein product</a>
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067560823?from=6926356&amp;to=6926550&amp;report=gbwithparts" target="new_entrez">214084 bp at 3' side: unnamed protein product</a>
+
+Forward primer  1        AGGGCAATCCTGGTGCCAGC  20
+Template        6712271  ........T...........  6712252
+
+Reverse primer  1        GCAATTCACACCAAGTATCGC  21
+Template        6710681  .....................  6710701
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2402669000?from=2103587&amp;to=2105179&amp;report=gbwithparts" target="new_entrez">
+             OX387185.1
+            </a>
+            Buxus sempervirens genome assembly, chromosome: 4
+            <pre>
+
+product length = 1593
+Forward primer  1        AGGGCAATCCTGGTGCCAGC  20
+Template        2105179  ........T...........  2105160
+
+Reverse primer  1        GCAATTCACACCAAGTATCGC  21
+Template        2103587  .....................  2103607
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1516538420?from=6616263&amp;to=6617858&amp;report=gbwithparts" target="new_entrez">
+             LR031576.1
+            </a>
+            Brassica rapa genome, scaffold: A04
+            <pre>
+
+product length = 1596
+Forward primer  1        AGGGCAATCCTGGTGCCAGC  20
+Template        6617858  ........T...........  6617839
+
+Reverse primer  1        GCAATTCACACCAAGTATCGC  21
+Template        6616263  .....................  6616283
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;id=965674702" target="new_entrez">
+             AP015766.1
+            </a>
+            Vigna angularis var. angularis DNA, scaffold: Scaffold_0722, complete sequence, cultivar: Shumari
+            <pre>
+
+product length = 1536
+Forward primer  1     AGGGCAATCCTGGTGCCAGC  20
+Template        2064  ......G.............  2045
+
+Reverse primer  1    GCAATTCACACCAAGTATCGC  21
+Template        529  .....................  549
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2581912921?from=42969158&amp;to=42971695&amp;report=gbwithparts" target="new_entrez">
+             OY737857.1
+            </a>
+            Triticum monococcum genome assembly, chromosome: UA
+            <pre>
+
+product length = 2538
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        42971695  .............G.......  42971675
+
+Reverse primer  1         GCAATTCACACCAAGTATCGC  21
+Template        42969158  .............G.......  42969178
+
+</pre>
+           </div>
+          </div>
+         </div>
+         <!-- -->
+        </div>
+        <!--/#alignments-->
+        <div class="hidden reanlz">
+         <span>
+          If you want to allow any of the unintended targets, check the box(es) next to the ones you accept and try again to re-search for specific primers
+         </span>
+         <span>
+          <input class="submReanl" disabled="disabled" id="submReanl2" type="submit" value="Submit"/>
+         </span>
+         <a class="helplink jig-ncbitoggler ui-ncbitoggler" data-jig="ncbitoggler" data-ncbitoggler-toggles="submReanlHelp2" href="#" title="Primer-BLAST help">
+          <i class="fas fa-question-circle">
+          </i>
+          <span class="usa-sr-only">
+           Help
+          </span>
+         </a>
+         <div aria-live="assertive" class="ui-helper-reset">
+          <div class="helpbox ui-ncbitoggler-slave" id="submReanlHelp2">
+           <p>
+            Primer-BLAST can only find non-specific primers for your template since there are other targets that are similar or identical to your template.  You may choose to re-search for specific primers by allowing some of the highly similar off-targets if they are irrelevant to your PCR experiment.  For example, not all transcript variants are expressed in all tissues, or you are not concerned about the predicted transcripts (i.e., XM_ accessions), or there are redundant database entries.  Another example is, when you enter a raw sequence as PCR template rather than an accession, Primer-BLAST will likely report many off-targets.  However, some of these might be your intended target that you should choose to allow.  When Primer-BLAST does not need to avoid the highly similar off-targets in selecting unique primer regions, it typically has a much higher chance to find specific primers for your intended target.
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <!-- alignInfo -->
+      </div>
+     </div>
+     <!-- SEARCH_INFO end -->
+    </div>
+    <!-- /#content -->
+    <footer>
+     <section class="icon-section">
+      <div class="icon-section_header" id="icon-section-header">
+       Follow NCBI
+      </div>
+      <div class="grid-container container">
+       <div class="icon-section_container">
+        <a aria-label="Twitter" class="footer-icon" href="https://twitter.com/ncbi" id="footer_twitter">
+         <svg data-name="Layer 1" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+           <style>
+            .cls-11 {
+                      fill: #737373;
+                    }
+           </style>
+          </defs>
+          <title>
+           Twitter
+          </title>
+          <path class="cls-11" d="M250.11,105.48c-7,3.14-13,3.25-19.27.14,8.12-4.86,8.49-8.27,11.43-17.46a78.8,78.8,0,0,1-25,9.55,39.35,39.35,0,0,0-67,35.85,111.6,111.6,0,0,1-81-41.08A39.37,39.37,0,0,0,81.47,145a39.08,39.08,0,0,1-17.8-4.92c0,.17,0,.33,0,.5a39.32,39.32,0,0,0,31.53,38.54,39.26,39.26,0,0,1-17.75.68,39.37,39.37,0,0,0,36.72,27.3A79.07,79.07,0,0,1,56,223.34,111.31,111.31,0,0,0,116.22,241c72.3,0,111.83-59.9,111.83-111.84,0-1.71,0-3.4-.1-5.09C235.62,118.54,244.84,113.37,250.11,105.48Z">
+          </path>
+         </svg>
+        </a>
+        <a aria-label="Facebook" class="footer-icon" href="https://www.facebook.com/ncbi.nlm" id="footer_facebook">
+         <svg data-name="Layer 1" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           Facebook
+          </title>
+          <path class="cls-11" d="M210.5,115.12H171.74V97.82c0-8.14,5.39-10,9.19-10h27.14V52l-39.32-.12c-35.66,0-42.42,26.68-42.42,43.77v19.48H99.09v36.32h27.24v109h45.41v-109h35Z">
+          </path>
+         </svg>
+        </a>
+        <a aria-label="LinkedIn" class="footer-icon" href="https://www.linkedin.com/company/ncbinlm" id="footer_linkedin">
+         <svg data-name="Layer 1" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           LinkedIn
+          </title>
+          <path class="cls-11" d="M101.64,243.37H57.79v-114h43.85Zm-22-131.54h-.26c-13.25,0-21.82-10.36-21.82-21.76,0-11.65,8.84-21.15,22.33-21.15S101.7,78.72,102,90.38C102,101.77,93.4,111.83,79.63,111.83Zm100.93,52.61A17.54,17.54,0,0,0,163,182v61.39H119.18s.51-105.23,0-114H163v13a54.33,54.33,0,0,1,34.54-12.66c26,0,44.39,18.8,44.39,55.29v58.35H198.1V182A17.54,17.54,0,0,0,180.56,164.44Z">
+          </path>
+         </svg>
+        </a>
+        <a aria-label="GitHub" class="footer-icon" href="https://github.com/ncbi" id="footer_github">
+         <svg data-name="Layer 1" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+           <style>
+            .cls-11,
+                    .cls-12 {
+                      fill: #737373;
+                    }
+
+                    .cls-11 {
+                      fill-rule: evenodd;
+                    }
+           </style>
+          </defs>
+          <title>
+           GitHub
+          </title>
+          <path class="cls-11" d="M151.36,47.28a105.76,105.76,0,0,0-33.43,206.1c5.28,1,7.22-2.3,7.22-5.09,0-2.52-.09-10.85-.14-19.69-29.42,6.4-35.63-12.48-35.63-12.48-4.81-12.22-11.74-15.47-11.74-15.47-9.59-6.56.73-6.43.73-6.43,10.61.75,16.21,10.9,16.21,10.9,9.43,16.17,24.73,11.49,30.77,8.79,1-6.83,3.69-11.5,6.71-14.14C108.57,197.1,83.88,188,83.88,147.51a40.92,40.92,0,0,1,10.9-28.39c-1.1-2.66-4.72-13.42,1-28,0,0,8.88-2.84,29.09,10.84a100.26,100.26,0,0,1,53,0C198,88.3,206.9,91.14,206.9,91.14c5.76,14.56,2.14,25.32,1,28a40.87,40.87,0,0,1,10.89,28.39c0,40.62-24.74,49.56-48.29,52.18,3.79,3.28,7.17,9.71,7.17,19.58,0,14.15-.12,25.54-.12,29,0,2.82,1.9,6.11,7.26,5.07A105.76,105.76,0,0,0,151.36,47.28Z">
+          </path>
+          <path class="cls-12" d="M85.66,199.12c-.23.52-1.06.68-1.81.32s-1.2-1.06-.95-1.59,1.06-.69,1.82-.33,1.21,1.07.94,1.6Zm-1.3-1">
+          </path>
+          <path class="cls-12" d="M90,203.89c-.51.47-1.49.25-2.16-.49a1.61,1.61,0,0,1-.31-2.19c.52-.47,1.47-.25,2.17.49s.82,1.72.3,2.19Zm-1-1.08">
+          </path>
+          <path class="cls-12" d="M94.12,210c-.65.46-1.71,0-2.37-.91s-.64-2.07,0-2.52,1.7,0,2.36.89.65,2.08,0,2.54Zm0,0">
+          </path>
+          <path class="cls-12" d="M99.83,215.87c-.58.64-1.82.47-2.72-.41s-1.18-2.06-.6-2.7,1.83-.46,2.74.41,1.2,2.07.58,2.7Zm0,0">
+          </path>
+          <path class="cls-12" d="M107.71,219.29c-.26.82-1.45,1.2-2.64.85s-2-1.34-1.74-2.17,1.44-1.23,2.65-.85,2,1.32,1.73,2.17Zm0,0">
+          </path>
+          <path class="cls-12" d="M116.36,219.92c0,.87-1,1.59-2.24,1.61s-2.29-.68-2.3-1.54,1-1.59,2.26-1.61,2.28.67,2.28,1.54Zm0,0">
+          </path>
+          <path class="cls-12" d="M124.42,218.55c.15.85-.73,1.72-2,1.95s-2.37-.3-2.52-1.14.73-1.75,2-2,2.37.29,2.53,1.16Zm0,0">
+          </path>
+         </svg>
+        </a>
+        <a aria-label="Blog" class="footer-icon" href="https://ncbiinsights.ncbi.nlm.nih.gov/" id="footer_blog">
+         <svg data-name="Layer 1" id="Layer_1" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+           <style>
+            .cls-1{fill:#737373;}
+           </style>
+          </defs>
+          <path class="cls-1" d="M14,30a4,4,0,1,1-4-4,4,4,0,0,1,4,4Zm11,3A19,19,0,0,0,7.05,15a1,1,0,0,0-1,1v3a1,1,0,0,0,.93,1A14,14,0,0,1,20,33.07,1,1,0,0,0,21,34h3a1,1,0,0,0,1-1Zm9,0A28,28,0,0,0,7,6,1,1,0,0,0,6,7v3a1,1,0,0,0,1,1A23,23,0,0,1,29,33a1,1,0,0,0,1,1h3A1,1,0,0,0,34,33Z">
+          </path>
+         </svg>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="container-fluid bg-primary">
+      <div class="container pt-5">
+       <div class="row mt-3">
+        <div class="col-lg-3 col-12">
+         <p>
+          <a class="text-white" href="https://www.nlm.nih.gov/socialmedia/index.html">
+           Connect with NLM
+          </a>
+         </p>
+         <ul class="list-inline social_media">
+          <li class="list-inline-item">
+           <a aria-label="Twitter" href="https://twitter.com/NLM_NIH" rel="noopener noreferrer" target="_blank">
+            <svg style="enable-background:new 0 0 249 249;" version="1.1" viewbox="0 0 249 249" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+             <style type="text/css">
+              .st20 {
+                          fill: #FFFFFF;
+                        }
+
+                        .st30 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+             </style>
+             <title>
+              SM-Twitter
+             </title>
+             <g>
+              <g>
+               <g>
+                <path class="st20" d="M192.9,88.1c-5,2.2-9.2,2.3-13.6,0.1c5.7-3.4,6-5.8,8.1-12.3c-5.4,3.2-11.4,5.5-17.6,6.7
+                                                c-10.5-11.2-28.1-11.7-39.2-1.2c-7.2,6.8-10.2,16.9-8,26.5c-22.3-1.1-43.1-11.7-57.2-29C58,91.6,61.8,107.9,74,116
+                                                c-4.4-0.1-8.7-1.3-12.6-3.4c0,0.1,0,0.2,0,0.4c0,13.2,9.3,24.6,22.3,27.2c-4.1,1.1-8.4,1.3-12.5,0.5c3.6,11.3,14,19,25.9,19.3
+                                                c-11.6,9.1-26.4,13.2-41.1,11.5c12.7,8.1,27.4,12.5,42.5,12.5c51,0,78.9-42.2,78.9-78.9c0-1.2,0-2.4-0.1-3.6
+                                                C182.7,97.4,189.2,93.7,192.9,88.1z">
+                </path>
+               </g>
+              </g>
+              <circle class="st30" cx="124.4" cy="128.8" r="108.2">
+              </circle>
+             </g>
+            </svg>
+           </a>
+          </li>
+          <li class="list-inline-item">
+           <a aria-label="Facebook" href="https://www.facebook.com/nationallibraryofmedicine" rel="noopener noreferrer" target="_blank">
+            <svg style="enable-background:new 0 0 249 249;" version="1.1" viewbox="0 0 249 249" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+             <style type="text/css">
+              .st10 {
+                          fill: #FFFFFF;
+                        }
+
+                        .st110 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+             </style>
+             <title>
+              SM-Facebook
+             </title>
+             <g>
+              <g>
+               <path class="st10" d="M159,99.1h-24V88.4c0-5,3.3-6.2,5.7-6.2h16.8V60l-24.4-0.1c-22.1,0-26.2,16.5-26.2,27.1v12.1H90v22.5h16.9
+                                                      v67.5H135v-67.5h21.7L159,99.1z">
+               </path>
+              </g>
+             </g>
+             <circle class="st110" cx="123.6" cy="123.2" r="108.2">
+             </circle>
+            </svg>
+           </a>
+          </li>
+          <li class="list-inline-item">
+           <a aria-label="Youtube" href="https://www.youtube.com/user/NLMNIH" rel="noopener noreferrer" target="_blank">
+            <svg style="enable-background:new 0 0 249 249;" version="1.1" viewbox="0 0 249 249" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+             <title>
+              SM-Youtube
+             </title>
+             <style type="text/css">
+              .st4 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .st5 {
+                          fill: #FFFFFF;
+                        }
+             </style>
+             <circle class="st4" cx="124.2" cy="123.4" r="108.2">
+             </circle>
+             <g transform="translate(0,-952.36218)">
+              <path class="st5" d="M88.4,1037.4c-10.4,0-18.7,8.3-18.7,18.7v40.1c0,10.4,8.3,18.7,18.7,18.7h72.1c10.4,0,18.7-8.3,18.7-18.7
+                                            v-40.1c0-10.4-8.3-18.7-18.7-18.7H88.4z M115.2,1058.8l29.4,17.4l-29.4,17.4V1058.8z">
+              </path>
+             </g>
+            </svg>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-12">
+         <p class="address_footer text-white">
+          National Library of Medicine
+          <br/>
+          <a class="text-white" href="https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/@38.9959508,-77.101021,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb:0x19156f88b27635b8!8m2!3d38.9959508!4d-77.0988323" rel="noopener noreferrer" target="_blank">
+           8600 Rockville Pike
+           <br/>
+           Bethesda, MD 20894
+          </a>
+         </p>
+        </div>
+        <div class="col-lg-3 col-12 centered-lg">
+         <p>
+          <a class="text-white" href="https://www.nlm.nih.gov/web_policies.html">
+           Web Policies
+          </a>
+          <br/>
+          <a class="text-white" href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office">
+           FOIA
+          </a>
+          <br/>
+          <a class="text-white" href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html" id="vdp">
+           HHS Vulnerability Disclosure
+          </a>
+         </p>
+        </div>
+        <div class="col-lg-3 col-12 centered-lg">
+         <p>
+          <a class="supportLink text-white" href="https://support.nlm.nih.gov/">
+           Help
+          </a>
+          <br/>
+          <a class="text-white" href="https://www.nlm.nih.gov/accessibility.html">
+           Accessibility
+          </a>
+          <br/>
+          <a class="text-white" href="https://www.nlm.nih.gov/careers/careers.html">
+           Careers
+          </a>
+         </p>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 centered-lg">
+         <nav class="bottom-links">
+          <ul class="mt-3">
+           <li>
+            <a class="text-white" href="//www.nlm.nih.gov/">
+             NLM
+            </a>
+           </li>
+           <li>
+            <a class="text-white" href="https://www.nih.gov/">
+             NIH
+            </a>
+           </li>
+           <li>
+            <a class="text-white" href="https://www.hhs.gov/">
+             HHS
+            </a>
+           </li>
+           <li>
+            <a class="text-white" href="https://www.usa.gov/">
+             USA.gov
+            </a>
+           </li>
+          </ul>
+         </nav>
+        </div>
+       </div>
+      </div>
+     </section>
+    </footer>
+    <script src="js/nwds.js" type="text/javascript">
+    </script>
+    <script src="js/ncbipopup.js" type="text/javascript">
+    </script>
+    <script src="js/header.js" type="text/javascript">
+    </script>
+    <script src="js/uswds.min.js">
+    </script>
+   </div>
+   <!-- /#content-wrap -->
+  </div>
+  <!--/#wrap-->
+  <script src="/portal/portal3rc.fcgi/rlib/js/InstrumentOmnitureBaseJS/InstrumentNCBIBaseJS/InstrumentPageStarterJS.js" type="text/javascript">
+  </script>
+ </body>
+</html>

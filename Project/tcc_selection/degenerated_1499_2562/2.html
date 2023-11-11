@@ -1,0 +1,4014 @@
+ï»¿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="animation:'none'" name="ncbitoggler"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="primerblast" name="ncbi_app"/>
+  <meta content="blastresults" name="ncbi_pdid"/>
+  <meta content="blastn" name="ncbi_program"/>
+  <meta content="nt" name="ncbi_db"/>
+  <meta content="0751986D53581C61_0000SID" name="ncbi_sessionid"/>
+  <meta content="31C9CBA753581C610000000000000001" name="ncbi_phid"/>
+  <script type="text/javascript">
+   var ncbi_startTime = new Date();
+  </script>
+  <title>
+   Primer-Blast results
+  </title>
+  <!-- style -->
+  <meta content="no-cache" http-equiv="Pragma"/>
+  <link href="css/uswds.min.css" media="screen" rel="stylesheet" type="text/css"/>
+  <!--<link rel="stylesheet"  type="text/css" href="https://www.ncbi.nlm.nih.gov/style-guide/static/nwds/css/nwds.css"/>-->
+  <link href="css/nwds.css" rel="stylesheet" type="text/css"/>
+  <link href="css/header.css" rel="stylesheet"/>
+  <link href="css/footer.css" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet"/>
+  <!-- Font Awesome icons -->
+  <link href="css/footer.css" media="screen" rel="stylesheet" type="text/css">
+   <link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
+   <link href="css/results.css" media="screen" rel="stylesheet" type="text/css"/>
+   <!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
+<![endif]-->
+   <!-- js files for title filling -->
+   <script src="js/utils.js" type="text/javascript">
+   </script>
+   <script src="/core/jig/1.15.2/js/jig.min.js" type="text/javascript">
+   </script>
+   <script src="js/remote_data_provider.js" type="text/javascript">
+   </script>
+   <script src="js/results.js" type="text/javascript">
+   </script>
+   <!-- JavaScript for Sequence Viewer integration -->
+   <script id="autoload" src="/projects/sviewer/js/sviewer.js" type="text/javascript">
+   </script>
+   <!-- reset some setting that were overwritten by ncbi_templates.css  -->
+   <style type="text/css">
+    h2 {margin: 0;}
+  a.x-menu-item { color:#222222; }
+   </style>
+  </link>
+ </head>
+ <body class="" id="type-a">
+  <div id="wrap">
+   <script>
+    var useOfficialGovtHeader = true;
+   </script>
+   <section class="usa-banner">
+    <div class="usa-accordion">
+     <header class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner">
+       <img alt="U.S. flag" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/favicons/favicon-57.png"/>
+       <p>
+        An official website of the United States government
+       </p>
+       <button aria-controls="gov-banner-top" aria-expanded="false" class="usa-accordion-button usa-banner-button">
+        <span class="usa-banner-button-text">
+         Here's how you know
+        </span>
+       </button>
+      </div>
+     </header>
+     <div aria-hidden="true" class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner-top">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+       <img alt="Dot gov" class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-dot-gov.svg"/>
+       <div class="usa-media_block-body">
+        <p>
+         <strong>
+          The .gov means itâs official.
+         </strong>
+         <br/>
+         Federal government websites often end in .gov or .mil. Before
+            sharing sensitive information, make sure youâre on a federal
+            government site.
+        </p>
+       </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+       <img alt="Https" class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-https.svg"/>
+       <div class="usa-media_block-body">
+        <p>
+         <strong>
+          The site is secure.
+         </strong>
+         <br/>
+         The
+         <strong>
+          https://
+         </strong>
+         ensures that you are connecting to the
+            official website and that any information you provide is encrypted
+            and transmitted securely.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <header class="ncbi-header" data-section="Header" role="banner">
+    <a class="usa-skipnav" href="#mainCont">
+     Skip to main page content
+    </a>
+    <div class="usa-grid">
+     <div class="usa-width-one-whole">
+      <div class="ncbi-header__logo">
+       <a aria-label="NCBI Logo" class="logo" data-ga-action="click_image" data-ga-label="NIH NLM Logo" href="https://www.ncbi.nlm.nih.gov/">
+        <img alt="NIH NLM Logo" src="https://www.ncbi.nlm.nih.gov/coreutils/nwds/img/logos/AgencyLogo.svg"/>
+       </a>
+      </div>
+      <div class="ncbi-header__account">
+       <a class="usa-button header-button" href="https://www.ncbi.nlm.nih.gov/account/?back_url=https%3A%2F%2Fwww%2Encbi%2Enlm%2Enih%2Egov%2Ftools%2Fprimer%2Dblast%2Findex%2Ecgi" id="account_login">
+        Log in
+       </a>
+       <button aria-controls="account_popup" class="header-button" id="account_info">
+        <span aria-hidden="true" class="fa fa-user">
+        </span>
+        <span aria-hidden="true" class="username desktop-only" id="uname_short">
+        </span>
+        <span class="sr-only">
+         Show account info
+        </span>
+       </button>
+      </div>
+      <div class="ncbi-popup-anchor">
+       <div aria-hidden="true" aria-labelledby="account-popup-header" class="ncbi-popup account-popup" id="account_popup" role="dialog">
+        <div class="ncbi-popup-head">
+         <button class="ncbi-close-button">
+          <span class="fa fa-window-close">
+          </span>
+          <span class="usa-sr-only">
+           Close
+          </span>
+         </button>
+         <h4>
+          Account
+         </h4>
+        </div>
+        <div class="account-user-info">
+         Logged in as:
+         <br/>
+         <b>
+          <span class="username" id="uname_long">
+           username
+          </span>
+         </b>
+        </div>
+        <div class="account-links">
+         <ul class="usa-unstyled-list">
+          <li>
+           <a href="https://www.ncbi.nlm.nih.gov/myncbi/" id="account_myncbi">
+            Dashboard
+           </a>
+           <span class="ncbi-text-small-light">
+            (My NCBI)
+           </span>
+          </li>
+          <li>
+           <a href="https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/" id="account_pubs">
+            Publications
+           </a>
+           <span class="ncbi-text-small-light">
+            (My Bibliography)
+           </span>
+          </li>
+          <li>
+           <a href="https://www.ncbi.nlm.nih.gov/account/settings/" id="account_settings">
+            Account settings
+           </a>
+          </li>
+          <li>
+           <a href="https://www.ncbi.nlm.nih.gov/account/signout/?back_url=https%3A%2F%2Fwww%2Encbi%2Enlm%2Enih%2Egov%2Ftools%2Fprimer%2Dblast%2Findex%2Ecgi" id="account_logout">
+            Log out
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </header>
+   <div aria-label="access keys" role="navigation">
+    <a accesskey="0" class="usa-sr-only" href="https://www.ncbi.nlm.nih.gov/guide/browsers/#ncbi_accesskeys" id="nws_header_accesskey_0" tabindex="-1">
+     Access keys
+    </a>
+    <a accesskey="1" class="usa-sr-only" href="https://www.ncbi.nlm.nih.gov" id="nws_header_accesskey_1" tabindex="-1">
+     NCBI Homepage
+    </a>
+    <a accesskey="2" class="set-base-url usa-sr-only" href="/myncbi/" id="nws_header_accesskey_2" tabindex="-1">
+     MyNCBI Homepage
+    </a>
+    <a accesskey="3" class="usa-sr-only" href="#maincontent" id="nws_header_accesskey_3" tabindex="-1">
+     Main Content
+    </a>
+    <a accesskey="4" class="usa-sr-only" href="#" id="nws_header_accesskey_4" tabindex="-1">
+     Main Navigation
+    </a>
+   </div>
+   <nav class="ncbi-topnav" id="navcontent">
+    <div class="usa-grid">
+     <span class="lf">
+      <a class="lfa" href="index.cgi">
+       Primer-BLAST
+      </a>
+      <span class="brc">
+       <span class="brcrmbsign">
+        »
+       </span>
+       JOB ID:JS_7TZV3mN-_4Z3kkIS51uqfqOTHjLP5xg
+      </span>
+     </span>
+     <span id="brc">
+     </span>
+     <span class="rf">
+     </span>
+    </div>
+   </nav>
+   <div class="" id="banner_ad">
+    <div>
+     <div>
+      <i class="fas fa-user-friends">
+      </i>
+      <span>
+       <a class="jt" href="mailto:blast-help@ncbi.nlm.nih.gov?subject=PrimerBLAST user research.&amp;body=Please contact me to discuss PrimerBLAST and how it can be improved." id="jt" target="hlp">
+        PrimerBLAST users!
+       </a>
+      </span>
+     </div>
+     <div class="help">
+      We want to hear from you about how PrimerBLAST can be improved.
+     </div>
+    </div>
+    <input class="sbt" id="btnJt" src="" type="button" value="Contact us"/>
+    <button aria-controls="banner_ad" blastspec="primertool" class="close" id="closeAd" pagetype="" program="">
+     <i class="fas fa-times">
+     </i>
+    </button>
+   </div>
+   <div id="content-wrap">
+    <div class="pageTitle">
+     Primer-BLAST Results
+     <a class="helplink jig-ncbitoggler ui-ncbitoggler" data-jig="ncbitoggler" data-ncbitoggler-toggles="hlp11" href="#" id="dnHelp" title="Primer-BLAST help">
+      <i class="fas fa-question-circle">
+      </i>
+      <span class="usa-sr-only">
+       Help
+      </span>
+     </a>
+     <div aria-live="assertive" class="ui-helper-reset">
+      <div class="helpbox ui-ncbitoggler-slave" id="hlp11">
+       <p>
+        Primer-BLAST was developed at NCBI to help users make primers that are specific
+            to intended PCR target.  It uses
+        <a href="http://primer3.wi.mit.edu/">
+         Primer3
+        </a>
+        to design PCR primers and then uses 
+            BLAST and global alignment algorithm to screen primers against user-selected database
+            in order to avoid primer pairs (all combinations including forward-reverse primer pair,
+            forward-forward as well as reverse-reverse pairs) that can cause non-specific amplifications. 
+            To cite Primer-BLAST or look for more details, please consult our publication:
+       </p>
+       <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=22708584">
+        Ye J, Coulouris G, Zaretskaya I, Cutcutache I, Rozen S, Madden T (2012).
+            Primer-BLAST: A tool to design target-specific primers for polymerase chain reaction.
+            BMC Bioinformatics. 13:134.
+       </a>
+       Use of Primer3 itself is subject to the terms and conditions stated on
+       <a href="http://primer3.wi.mit.edu/">
+        Primer3 web site
+       </a>
+       .
+      </div>
+     </div>
+    </div>
+    <div id="content">
+     <ul class="msg">
+      <li class="">
+       <p class="">
+       </p>
+      </li>
+     </ul>
+     <div class="">
+      <div id="summary">
+       <div class="paramSummary">
+        <dl>
+         <dt>
+          Input PCR template
+         </dt>
+         <dd>
+          none
+         </dd>
+         <dt>
+          Specificity of primers
+         </dt>
+         <dd>
+          Target templates were found in selected database: Nucleotide collection (nt)
+         </dd>
+         <dt>
+          Other reports
+         </dt>
+         <dd>
+          <a class="resArrowLinkB jtg jig-ncbitoggler ui-ncbitoggler" data-ncbitoggler-toggles="resStat" href="#" id="showStat" title="Show statistics">
+           Search Summary
+          </a>
+         </dd>
+        </dl>
+       </div>
+       <div aria-live="assertive" class="ui-helper-reset">
+        <div class="helpbox helpbox ui-ncbitoggler-slave" id="resStat">
+         <table class="searchInfo" id="params">
+          <caption>
+           Search parameters and other details
+          </caption>
+          <tr>
+           <th>
+            <div>
+             Search parameter name
+            </div>
+           </th>
+           <th>
+            <div>
+             Search parameter value
+            </div>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            Number of Blast hits analyzed
+           </td>
+           <td>
+            189165
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Entrez query
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min total mismatches
+           </td>
+           <td>
+            1
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min 3' end mismatches
+           </td>
+           <td>
+            2
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Defined 3' end region length
+           </td>
+           <td>
+            5
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Mismatch threshold to ignore targets
+           </td>
+           <td>
+            6
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max target size
+           </td>
+           <td>
+            4000
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max number of Blast target sequences
+           </td>
+           <td>
+            100000
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Blast E value
+           </td>
+           <td>
+            30000
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Blast word size
+           </td>
+           <td>
+            7
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max candidate primer pairs
+           </td>
+           <td>
+            500
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min PCR product size
+           </td>
+           <td>
+            63
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max PCR product size
+           </td>
+           <td>
+            3000
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min Primer size
+           </td>
+           <td>
+            15
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Opt Primer size
+           </td>
+           <td>
+            20
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max Primer size
+           </td>
+           <td>
+            25
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Min Tm
+           </td>
+           <td>
+            57
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Opt Tm
+           </td>
+           <td>
+            60
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max Tm
+           </td>
+           <td>
+            63
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Max Tm difference
+           </td>
+           <td>
+            3
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Repeat filter
+           </td>
+           <td>
+            AUTO
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Low complexity filter
+           </td>
+           <td>
+            Yes
+           </td>
+          </tr>
+         </table>
+        </div>
+        <!-- resStat -->
+       </div>
+       <!-- aria end -->
+      </div>
+      <!--RID=  KB0E7F2Z01B group rid:  -->
+      <div class="usa-accordion">
+      </div>
+      <div class="usa-accordion">
+       <button aria-controls="alignInfo" aria-expanded="true" class="usa-accordion-button sectAccordion">
+        Detailed primer reports
+        <i aria-hidden="true" class="fa fa-plus ncbi-button-icon">
+        </i>
+        <i aria-hidden="true" class="fa fa-minus ncbi-button-icon">
+        </i>
+       </button>
+       <div aria-hidden="false" class="resBox usa-accordion-content" id="alignInfo">
+        <form action="./primertool.cgi" id="reanalysisform" method="post" name="reanalysisform">
+         <div class="hidden reanlz">
+          <span>
+           You can re-search for specific primers by accepting some of the unintended targets, check the box(es) next to the ones you accept and try again to re-search for specific primers
+          </span>
+          <span>
+           <input class="submReanl" disabled="disabled" id="submReanl1" type="submit" value="Submit"/>
+          </span>
+          <a class="helplink jig-ncbitoggler ui-ncbitoggler" data-jig="ncbitoggler" data-ncbitoggler-toggles="submReanlHelp1" href="#" title="Primer-BLAST help">
+           <i class="fas fa-question-circle">
+           </i>
+           <span class="usa-sr-only">
+            Help
+           </span>
+          </a>
+          <div aria-live="assertive" class="ui-helper-reset">
+           <div class="helpbox ui-ncbitoggler-slave" id="submReanlHelp1">
+            <p>
+             Primer-BLAST can only find non-specific primers for your template since there are other targets that are similar or identical to your template.  You may choose to re-search for specific primers by allowing some of the highly similar off-targets if they are irrelevant to your PCR experiment.  For example, not all transcript variants are expressed in all tissues, or you are not concerned about the predicted transcripts (i.e., XM_ accessions), or there are redundant database entries.  Another example is, when you enter a raw sequence as PCR template rather than an accession, Primer-BLAST will likely report many off-targets.  However, some of these might be your intended target that you should choose to allow.  When Primer-BLAST does not need to avoid the highly similar off-targets in selecting unique primer regions, it typically has a much higher chance to find specific primers for your intended target.
+            </p>
+           </div>
+          </div>
+         </div>
+        </form>
+        <div class="blRes" id="alignments">
+         <div class="prPairInfo">
+          <a name="0">
+          </a>
+          <h2>
+           Primer pair 1
+          </h2>
+          <table>
+           <tr>
+            <th>
+            </th>
+            <th>
+             Sequence (5'-&gt;3')
+            </th>
+            <th>
+             Length
+            </th>
+            <th>
+             Tm
+            </th>
+            <th>
+             GC%
+            </th>
+            <th>
+             Self complementarity
+            </th>
+            <th>
+             Self 3' complementarity
+            </th>
+           </tr>
+           <tr>
+            <th>
+             Forward primer
+            </th>
+            <td>
+             GGCTGCTGGCACCAGACTTGC
+            </td>
+            <td>
+             21
+            </td>
+            <td>
+             66.68
+            </td>
+            <td>
+             66.67
+            </td>
+            <td>
+             7.00
+            </td>
+            <td>
+             2.00
+            </td>
+           </tr>
+           <tr>
+            <th>
+             Reverse primer
+            </th>
+            <td>
+             CCTTATCATTTAGAGGAAGGAG
+            </td>
+            <td>
+             22
+            </td>
+            <td>
+             53.15
+            </td>
+            <td>
+             40.91
+            </td>
+            <td>
+             4.00
+            </td>
+            <td>
+             1.00
+            </td>
+           </tr>
+          </table>
+          <div class="hidden">
+           <div class="prPairTl">
+            Products on intended targets
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+           </div>
+          </div>
+          <div class="hidden">
+           <div class="prPairTl">
+            Products on allowed targets
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+           </div>
+          </div>
+          <div class="hidden">
+           <div class="prPairTl">
+            Products on allowed transcript variants
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+           </div>
+          </div>
+          <div class="hidden">
+           <div class="prPairTl">
+            Products on potentially unintended templates
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+           </div>
+          </div>
+          <div class="hidden shown">
+           <div class="prPairTl">
+            Products on target templates
+           </div>
+           <hr/>
+           <div class="prPairDtl">
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2581913088?from=34629789&amp;to=40422914&amp;report=gbwithparts" target="new_entrez">
+             OY737865.1
+            </a>
+            Triticum monococcum genome assembly, chromosome: UA
+            <pre>
+
+product length = 3329
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        35476561  .....................  35476581
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        35479889  ......................  35479868
+
+</pre>
+            <pre>
+
+product length = 1546
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        34629789  .....................  34629809
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        34631334  ......................  34631313
+
+</pre>
+            <pre>
+
+product length = 1761
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40421154  .....................  40421174
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40422914  .....................  40422894
+
+</pre>
+            <pre>
+
+product length = 3577
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        37246353  .....................  37246373
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        37249929  .....................  37249909
+
+</pre>
+            <pre>
+
+product length = 3008
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        36482281  .....................  36482301
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        36485288  .....................  36485268
+
+</pre>
+            <pre>
+
+product length = 2188
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        37572575  ......................  37572554
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        37570388  ......................  37570409
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2581912921?from=31632294&amp;to=41754436&amp;report=gbwithparts" target="new_entrez">
+             OY737857.1
+            </a>
+            Triticum monococcum genome assembly, chromosome: UA
+            <pre>
+
+product length = 3583
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        31635876  .....................  31635856
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        31632294  ......................  31632315
+
+</pre>
+            <pre>
+
+product length = 2991
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        39100352  .....................  39100372
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        39103342  ......................  39103321
+
+</pre>
+            <pre>
+
+product length = 3961
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        35426550  .....................  35426570
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        35430510  ......................  35430489
+
+</pre>
+            <pre>
+
+product length = 2956
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40233880  .....................  40233900
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40236835  .....................  40236815
+
+</pre>
+            <pre>
+
+product length = 2615
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        41754436  ......................  41754415
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        41751822  ......................  41751843
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2548425099?from=15024232&amp;to=18109938&amp;report=gbwithparts" target="new_entrez">
+             OY340910.1
+            </a>
+            Alnus glutinosa genome assembly, chromosome: 13
+            <pre>
+
+product length = 607
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        18109332  .....................  18109352
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        18109938  ......................  18109917
+
+</pre>
+            <pre>
+
+product length = 2526
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        18029551  .....................  18029571
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        18032076  ......................  18032055
+
+</pre>
+            <pre>
+
+product length = 2486
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        16752939  .....................  16752959
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        16755424  ......................  16755403
+
+</pre>
+            <pre>
+
+product length = 1116
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15025347  .....................  15025327
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15024232  ......................  15024253
+
+</pre>
+            <pre>
+
+product length = 3510
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        16521491  .....................  16521511
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        16525000  .....................  16524980
+
+</pre>
+            <pre>
+
+product length = 3596
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15387485  .....................  15387505
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15391080  .....................  15391060
+
+</pre>
+            <pre>
+
+product length = 1000
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15224315  .....................  15224335
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15225314  .....................  15225294
+
+</pre>
+            <pre>
+
+product length = 2286
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15564006  ......................  15563985
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15561721  ......................  15561742
+
+</pre>
+            <pre>
+
+product length = 3063
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15361060  ......................  15361039
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15357998  ......................  15358019
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546771426?from=18283512&amp;to=61169217&amp;report=gbwithparts" target="new_entrez">
+             OY288254.1
+            </a>
+            Agrostemma githago genome assembly, chromosome: 16
+            <pre>
+
+product length = 3264
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        18286775  .....................  18286755
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        18283512  ......................  18283533
+
+</pre>
+            <pre>
+
+product length = 3025
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        61169217  .........T...........  61169197
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        61166193  ......................  61166214
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546771425?from=39275105&amp;to=39278333&amp;report=gbwithparts" target="new_entrez">
+             OY288253.1
+            </a>
+            Agrostemma githago genome assembly, chromosome: 15
+            <pre>
+
+product length = 3229
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        39278333  .....................  39278313
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        39275105  ......................  39275126
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546771420?from=34625412&amp;to=34773600&amp;report=gbwithparts" target="new_entrez">
+             OY288248.1
+            </a>
+            Agrostemma githago genome assembly, chromosome: 10
+            <pre>
+
+product length = 3609
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        34769992  .....................  34770012
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        34773600  ......................  34773579
+
+</pre>
+            <pre>
+
+product length = 2243
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        34628820  .....................  34628840
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        34631062  ......................  34631041
+
+</pre>
+            <pre>
+
+product length = 2243
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        34625412  .....................  34625432
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        34627654  ......................  34627633
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546771419?from=27627076&amp;to=27629224&amp;report=gbwithparts" target="new_entrez">
+             OY288247.1
+            </a>
+            Agrostemma githago genome assembly, chromosome: 9
+            <pre>
+
+product length = 2149
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        27629224  .....................  27629204
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        27627076  ......................  27627097
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546768689?from=21168970&amp;to=21211677&amp;report=gbwithparts" target="new_entrez">
+             OY288262.1
+            </a>
+            Agrostemma githago genome assembly, chromosome: 24
+            <pre>
+
+product length = 2244
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        21209434  .....................  21209454
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        21211677  ......................  21211656
+
+</pre>
+            <pre>
+
+product length = 2244
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        21168970  .....................  21168990
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        21171213  ......................  21171192
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2523335134?from=32976304&amp;to=33894516&amp;report=gbwithparts" target="new_entrez">
+             OX940789.1
+            </a>
+            Trifolium fragiferum genome assembly, chromosome: 1
+            <pre>
+
+product length = 3910
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        33572855  .....................  33572875
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        33576764  ......................  33576743
+
+</pre>
+            <pre>
+
+product length = 3574
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        33047610  .....................  33047590
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        33044037  ......................  33044058
+
+</pre>
+            <pre>
+
+product length = 3546
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        33890971  .....................  33890991
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        33894516  .....................  33894496
+
+</pre>
+            <pre>
+
+product length = 3488
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        32976304  .....................  32976324
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        32979791  .....................  32979771
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2416169592?from=8995809&amp;to=8999214&amp;report=gbwithparts" target="new_entrez">
+             CP114482.1
+            </a>
+            Coriaria nepalensis isolate Cnep1 chromosome 02
+            <pre>
+
+product length = 3406
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        8995809  .....................  8995829
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        8999214  .....................  8999194
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2515275835?from=6711312&amp;to=8273764&amp;report=gbwithparts" target="new_entrez">
+             CP126390.1
+            </a>
+            Musa acuminata subsp. malaccensis isolate AA chromosome 21
+            <pre>
+
+product length = 3096
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        8270669  .....................  8270689
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        8273764  ......................  8273743
+
+</pre>
+            <pre>
+
+product length = 2958
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        6772790  .....................  6772810
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        6775747  ......................  6775726
+
+</pre>
+            <pre>
+
+product length = 2958
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        6711312  .....................  6711332
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        6714269  ......................  6714248
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2515275824?from=6246683&amp;to=6893227&amp;report=gbwithparts" target="new_entrez">
+             CP126379.1
+            </a>
+            Musa acuminata subsp. malaccensis isolate AA chromosome 10
+            <pre>
+
+product length = 2958
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        6304637  .....................  6304657
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        6307594  ......................  6307573
+
+</pre>
+            <pre>
+
+product length = 2958
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        6246683  .....................  6246703
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        6249640  ......................  6249619
+
+</pre>
+            <pre>
+
+product length = 2845
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        6893227  .....................  6893207
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        6890383  ......................  6890404
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2321928949?from=15244639&amp;to=24070474&amp;report=gbwithparts" target="new_entrez">
+             OX359264.1
+            </a>
+            Hedera helix genome assembly, chromosome: 1
+            <pre>
+
+product length = 3607
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        20487481  .....................  20487501
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        20491087  ......................  20491066
+
+</pre>
+            <pre>
+
+product length = 1296
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        17725559  .....................  17725579
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17726854  ......................  17726833
+
+</pre>
+            <pre>
+
+product length = 318
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15495035  .....................  15495055
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15495352  ......................  15495331
+
+</pre>
+            <pre>
+
+product length = 2650
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15866288  .....................  15866268
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15863639  ......................  15863660
+
+</pre>
+            <pre>
+
+product length = 895
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        19944653  .....................  19944673
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        19945547  .....................  19945527
+
+</pre>
+            <pre>
+
+product length = 1655
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        16338356  .....................  16338376
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        16340010  .....................  16339990
+
+</pre>
+            <pre>
+
+product length = 1455
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        24070474  ......................  24070453
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        24069020  ......................  24069041
+
+</pre>
+            <pre>
+
+product length = 3800
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17509289  ......................  17509268
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17505490  ......................  17505511
+
+</pre>
+            <pre>
+
+product length = 2443
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15801743  ......................  15801722
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15799301  ......................  15799322
+
+</pre>
+            <pre>
+
+product length = 3897
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15244639  ....................G  15244659
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15248535  ......................  15248514
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2402669000?from=584581&amp;to=5933018&amp;report=gbwithparts" target="new_entrez">
+             OX387185.1
+            </a>
+            Buxus sempervirens genome assembly, chromosome: 4
+            <pre>
+
+product length = 1881
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5931138  .....................  5931158
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5933018  .....................  5932998
+
+</pre>
+            <pre>
+
+product length = 3207
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5403022  .....................  5403042
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5406228  .....................  5406208
+
+</pre>
+            <pre>
+
+product length = 3205
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        584581  .....................  584601
+
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        587785  .....................  587765
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2233315585?from=31829481&amp;to=31832057&amp;report=gbwithparts" target="new_entrez">
+             OW569319.1
+            </a>
+            Mercurialis annua genome assembly, chromosome: LG1-X
+            <pre>
+
+product length = 2577
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        31832057  .....................  31832037
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        31829481  ......................  31829502
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2233315490?from=17934205&amp;to=19587781&amp;report=gbwithparts" target="new_entrez">
+             OW569316.1
+            </a>
+            Mercurialis annua genome assembly, chromosome: LG6
+            <pre>
+
+product length = 2361
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        19585421  .....................  19585441
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        19587781  ......................  19587760
+
+</pre>
+            <pre>
+
+product length = 1633
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        17934205  .....................  17934225
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        17935837  .....................  17935817
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2442578498?from=272427&amp;to=275683&amp;report=gbwithparts" target="new_entrez">
+             OX291526.1
+            </a>
+            Arabidopsis thaliana genome assembly, chromosome: 4
+            <pre>
+
+product length = 3257
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        275683  .....................  275663
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        272427  ......................  272448
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2438748321?from=37283161&amp;to=37337207&amp;report=gbwithparts" target="new_entrez">
+             OX419232.1
+            </a>
+            Chenopodium album genome assembly, chromosome: 25
+            <pre>
+
+product length = 3476
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        37337207  .....................  37337187
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        37333732  ......................  37333753
+
+</pre>
+            <pre>
+
+product length = 3476
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        37286636  .....................  37286616
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        37283161  ......................  37283182
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2265471797?from=212239&amp;to=400185&amp;report=gbwithparts" target="new_entrez">
+             CP087127.2
+            </a>
+            Arabidopsis thaliana chromosome 2
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        400185  .....................  400165
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        396825  ......................  396846
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        395661  .....................  395641
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        392301  ......................  392322
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        362626  .....................  362606
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        359266  ......................  359287
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        307146  .....................  307126
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        303786  ......................  303807
+
+</pre>
+            <pre>
+
+product length = 3461
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        292370  .....................  292350
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        288910  ......................  288931
+
+</pre>
+            <pre>
+
+product length = 3462
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        215700  .....................  215680
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        212239  ......................  212260
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2512878237?from=33897587&amp;to=41640645&amp;report=gbwithparts" target="new_entrez">
+             OX638062.1
+            </a>
+            Trifolium dubium genome assembly, chromosome: 1
+            <pre>
+
+product length = 3677
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40657757  .....................  40657777
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        40661433  ......................  40661412
+
+</pre>
+            <pre>
+
+product length = 3893
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40365899  .....................  40365919
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        40369791  ......................  40369770
+
+</pre>
+            <pre>
+
+product length = 3270
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40217880  .....................  40217900
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        40221149  ......................  40221128
+
+</pre>
+            <pre>
+
+product length = 3272
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        36964637  .....................  36964657
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        36967908  ......................  36967887
+
+</pre>
+            <pre>
+
+product length = 3272
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        35075236  .....................  35075256
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        35078507  ......................  35078486
+
+</pre>
+            <pre>
+
+product length = 3185
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        33897587  .....................  33897607
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        33900771  ......................  33900750
+
+</pre>
+            <pre>
+
+product length = 3272
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        41640645  .....................  41640625
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        41637374  ......................  41637395
+
+</pre>
+            <pre>
+
+product length = 3422
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        41207317  .....................  41207297
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        41203896  ......................  41203917
+
+</pre>
+            <pre>
+
+product length = 443
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40960812  .....................  40960792
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        40960370  ......................  40960391
+
+</pre>
+            <pre>
+
+product length = 3578
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40938843  .....................  40938823
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        40935266  ......................  40935287
+
+</pre>
+            <pre>
+
+product length = 2282
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40787215  .....................  40787195
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        40784934  ......................  40784955
+
+</pre>
+            <pre>
+
+product length = 3268
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        37242783  .....................  37242763
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        37239516  ......................  37239537
+
+</pre>
+            <pre>
+
+product length = 3272
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        36171333  .....................  36171313
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        36168062  ......................  36168083
+
+</pre>
+            <pre>
+
+product length = 3272
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        36156708  .....................  36156688
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        36153437  ......................  36153458
+
+</pre>
+            <pre>
+
+product length = 2111
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        34996446  .....................  34996426
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        34994336  ......................  34994357
+
+</pre>
+            <pre>
+
+product length = 3272
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        34926532  .....................  34926512
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        34923261  ......................  34923282
+
+</pre>
+            <pre>
+
+product length = 3867
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        41253100  .....................  41253120
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        41256966  .....................  41256946
+
+</pre>
+            <pre>
+
+product length = 3890
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        41178576  .....................  41178596
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        41182465  .....................  41182445
+
+</pre>
+            <pre>
+
+product length = 1970
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40448655  .....................  40448675
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40450624  .....................  40450604
+
+</pre>
+            <pre>
+
+product length = 3311
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40232494  .....................  40232514
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        40235804  .....................  40235784
+
+</pre>
+            <pre>
+
+product length = 3398
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        41231557  ......................  41231536
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        41228160  ......................  41228181
+
+</pre>
+            <pre>
+
+product length = 1719
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        37634630  ......................  37634609
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        37632912  ......................  37632933
+
+</pre>
+            <pre>
+
+product length = 3333
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        35031051  ......................  35031030
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        35027719  ......................  35027740
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2511383461?from=3715420&amp;to=25620159&amp;report=gbwithparts" target="new_entrez">
+             OX637673.1
+            </a>
+            Populus nigra genome assembly, chromosome: 2
+            <pre>
+
+product length = 1579
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        25618581  .....................  25618601
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        25620159  ......................  25620138
+
+</pre>
+            <pre>
+
+product length = 3115
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        18877129  .....................  18877149
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        18880243  ......................  18880222
+
+</pre>
+            <pre>
+
+product length = 1908
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        19238260  .....................  19238240
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        19236353  ......................  19236374
+
+</pre>
+            <pre>
+
+product length = 3682
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        18731889  .....................  18731869
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        18728208  ......................  18728229
+
+</pre>
+            <pre>
+
+product length = 3852
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        3719271  .....................  3719251
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        3715420  ......................  3715441
+
+</pre>
+            <pre>
+
+product length = 3459
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        18315337  .....................  18315357
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        18318795  .....................  18318775
+
+</pre>
+            <pre>
+
+product length = 1870
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15011047  .....................  15011067
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15012916  .....................  15012896
+
+</pre>
+            <pre>
+
+product length = 1358
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        19136026  ......................  19136005
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        19134669  ......................  19134690
+
+</pre>
+            <pre>
+
+product length = 1976
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17766379  ......................  17766358
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17764404  ......................  17764425
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2290162607?from=297319&amp;to=520451&amp;report=gbwithparts" target="new_entrez">
+             OX298803.1
+            </a>
+            Arabidopsis thaliana genome assembly, chromosome: 2
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        520451  .....................  520431
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        517091  ......................  517112
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        515927  .....................  515907
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        512567  ......................  512588
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        471014  .....................  470994
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        467654  ......................  467675
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        415535  .....................  415515
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        412175  ......................  412196
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        400757  .....................  400737
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        397397  ......................  397418
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        325397  .....................  325377
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        322037  ......................  322058
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        300679  .....................  300659
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        297319  ......................  297340
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2279796748?from=13653645&amp;to=13657055&amp;report=gbwithparts" target="new_entrez">
+             CP086751.1
+            </a>
+            Arabidopsis thaliana ecotype 5856 chromosome 3 sequence
+            <pre>
+
+product length = 3411
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        13657055  .....................  13657035
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        13653645  ......................  13653666
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2483369511?from=13966620&amp;to=13967893&amp;report=gbwithparts" target="new_entrez">
+             OX461173.1
+            </a>
+            Arabidopsis thaliana genome assembly, chromosome: 4
+            <pre>
+
+product length = 1274
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        13966620  .....................  13966640
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        13967893  .....................  13967873
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2578657835?from=29344&amp;to=30785&amp;report=gbwithparts" target="new_entrez">
+             OY734959.1
+            </a>
+            Spergularia bocconei genome assembly, chromosome: 18
+            <pre>
+
+product length = 1442
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        29344  .....................  29364
+
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        30785  .....................  30765
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2575818845?from=5064529&amp;to=5287479&amp;report=gbwithparts" target="new_entrez">
+             OR453402.1
+            </a>
+            Arabidopsis thaliana isolate CS1092 nucleolus organizing region NOR2, complete sequence
+            <pre>
+
+product length = 3360
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5287479  .....................  5287459
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        5284120  ......................  5284141
+
+</pre>
+            <pre>
+
+product length = 3360
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5282957  .....................  5282937
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        5279598  ......................  5279619
+
+</pre>
+            <pre>
+
+product length = 3358
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5238087  .....................  5238067
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        5234730  ......................  5234751
+
+</pre>
+            <pre>
+
+product length = 3359
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5182643  .....................  5182623
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        5179285  ......................  5179306
+
+</pre>
+            <pre>
+
+product length = 3361
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5167877  .....................  5167857
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        5164517  ......................  5164538
+
+</pre>
+            <pre>
+
+product length = 3359
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5092583  .....................  5092563
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        5089225  ......................  5089246
+
+</pre>
+            <pre>
+
+product length = 3360
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5067888  .....................  5067868
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        5064529  ......................  5064550
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2575820066?from=45999186&amp;to=47809987&amp;report=gbwithparts" target="new_entrez">
+             OY730198.1
+            </a>
+            Pseudognaphalium luteoalbum genome assembly, chromosome: 7
+            <pre>
+
+product length = 1406
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        47282138  .....................  47282118
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        47280733  ......................  47280754
+
+</pre>
+            <pre>
+
+product length = 3305
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        46962531  .....................  46962511
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        46959227  ......................  46959248
+
+</pre>
+            <pre>
+
+product length = 3285
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        47060578  .....................  47060598
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        47063862  ......................  47063841
+
+</pre>
+            <pre>
+
+product length = 3819
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        46908114  .....................  46908134
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        46911932  ......................  46911911
+
+</pre>
+            <pre>
+
+product length = 1164
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        47706095  .....................  47706115
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        47707258  .....................  47707238
+
+</pre>
+            <pre>
+
+product length = 3862
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        47809987  ......................  47809966
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        47806126  ......................  47806147
+
+</pre>
+            <pre>
+
+product length = 923
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        47622416  ......................  47622395
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        47621494  ......................  47621515
+
+</pre>
+            <pre>
+
+product length = 3348
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        46571001  ......................  46570980
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        46567654  ......................  46567675
+
+</pre>
+            <pre>
+
+product length = 3504
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        46002689  ......................  46002668
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        45999186  ......................  45999207
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2574562006?from=46666009&amp;to=46666368&amp;report=gbwithparts" target="new_entrez">
+             CP124717.1
+            </a>
+            Capsicum rhomboideum cultivar Andean isolate CrT2T chromosome 3
+            <pre>
+
+product length = 360
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        46666368  .....................  46666348
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        46666009  ......................  46666030
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2099744672?from=31108170&amp;to=31110640&amp;report=gbwithparts" target="new_entrez">
+             OU640346.1
+            </a>
+            Solanum lycopersicum genome assembly, chromosome: 3
+            <pre>
+
+product length = 2471
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        31110640  ......................  31110619
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        31108170  ......................  31108191
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2096161391?from=42595554&amp;to=43816168&amp;report=gbwithparts" target="new_entrez">
+             OU696515.1
+            </a>
+            Malus sylvestris genome assembly, chromosome: 13
+            <pre>
+
+product length = 3324
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        43812845  .....................  43812865
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        43816168  ......................  43816147
+
+</pre>
+            <pre>
+
+product length = 3312
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        43742341  .....................  43742361
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        43745652  ......................  43745631
+
+</pre>
+            <pre>
+
+product length = 2322
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        42639471  .....................  42639491
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        42641792  ......................  42641771
+
+</pre>
+            <pre>
+
+product length = 2322
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        42595554  .....................  42595574
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        42597875  ......................  42597854
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067541637?from=16221567&amp;to=17517373&amp;report=gbwithparts" target="new_entrez">
+             LS974617.2
+            </a>
+            Brassica rapa genome assembly, chromosome: A01
+            <pre>
+
+product length = 3610
+Features flanking this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067541637?from=17503627&amp;to=17505185&amp;report=gbwithparts" target="new_entrez">8580 bp at 5' side: unnamed protein product</a>
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067541637?from=18146917&amp;to=18147252&amp;report=gbwithparts" target="new_entrez">629543 bp at 3' side: unnamed protein product</a>
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        17513764  .....................  17513784
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17517373  ......................  17517352
+
+</pre>
+            <pre>
+
+product length = 2776
+Features flanking this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067541637?from=16814263&amp;to=16815039&amp;report=gbwithparts" target="new_entrez">120029 bp at 5' side: unnamed protein product</a>
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067541637?from=17014144&amp;to=17014362&amp;report=gbwithparts" target="new_entrez">76301 bp at 3' side: unnamed protein product</a>
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        16937842  .....................  16937822
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        16935067  ......................  16935088
+
+</pre>
+            <pre>
+
+product length = 2235
+Features flanking this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067541637?from=16210245&amp;to=16210634&amp;report=gbwithparts" target="new_entrez">10934 bp at 5' side: unnamed protein product</a>
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067541637?from=16253586&amp;to=16253975&amp;report=gbwithparts" target="new_entrez">29784 bp at 3' side: unnamed protein product</a>
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        16223801  .....................  16223781
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        16221567  ......................  16221588
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1939055477?from=24329&amp;to=132206&amp;report=gbwithparts" target="new_entrez">
+             MW172411.1
+            </a>
+            Arabidopsis thaliana NOR2 gene junction genomic sequence
+            <pre>
+
+product length = 3345
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        132206  .....................  132186
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        128862  ......................  128883
+
+</pre>
+            <pre>
+
+product length = 3340
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        27668  C....................  27648
+
+Reverse primer  1      CCTTATCATTTAGAGGAAGGAG  22
+Template        24329  ......................  24350
+
+</pre>
+            <pre>
+
+product length = 3350
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        82944  .............G.......  82924
+
+Reverse primer  1      CCTTATCATTTAGAGGAAGGAG  22
+Template        79595  ......................  79616
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;id=1858311378" target="new_entrez">
+             MN644913.1
+            </a>
+            Guadua chacoensis clone Gcha 02 microsatellite sequence
+            <pre>
+
+product length = 250
+Reverse primer  1    CCTTATCATTTAGAGGAAGGAG  22
+Template        305  ......................  284
+
+Reverse primer  1   CCTTATCATTTAGAGGAAGGAG  22
+Template        56  ......................  77
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1901119350?from=12895847&amp;to=12897120&amp;report=gbwithparts" target="new_entrez">
+             LR881469.1
+            </a>
+            Arabidopsis thaliana genome assembly, chromosome: 4
+            <pre>
+
+product length = 1274
+Features flanking this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1901119350?from=12873108&amp;to=12874253&amp;report=gbwithparts" target="new_entrez">21595 bp at 5' side: unnamed protein product</a>
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1901119350?from=12914754&amp;to=12915303&amp;report=gbwithparts" target="new_entrez">17633 bp at 3' side: unnamed protein product</a>
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12895847  .....................  12895867
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12897120  .....................  12897100
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1901084334?from=17384820&amp;to=17388586&amp;report=gbwithparts" target="new_entrez">
+             LR881468.1
+            </a>
+            Arabidopsis thaliana genome assembly, chromosome: 3
+            <pre>
+
+product length = 3767
+Features flanking this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1901084334?from=16708312&amp;to=16712624&amp;report=gbwithparts" target="new_entrez">672197 bp at 5' side: unnamed protein product</a>
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1901084334?from=17521834&amp;to=17525786&amp;report=gbwithparts" target="new_entrez">133247 bp at 3' side: id:g12548.t1.cds;~source:augustus</a>
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17388586  ......................  17388565
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17384820  ......................  17384841
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1848398626?from=7196857&amp;to=7200552&amp;report=gbwithparts" target="new_entrez">
+             AP019874.1
+            </a>
+            Marchantia polymorpha subsp. ruderalis Tak-1 DNA, chromosome: V
+            <pre>
+
+product length = 3696
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        7196857  .....................  7196877
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        7200552  ......................  7200531
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1727326099?from=17603966&amp;to=17606955&amp;report=gbwithparts" target="new_entrez">
+             CP032582.1
+            </a>
+            Gossypium turneri isolate D10-2 chromosome D10_12
+            <pre>
+
+product length = 2990
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        17606955  .....................  17606935
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17603966  ......................  17603987
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1431907560?from=30723822&amp;to=30727691&amp;report=gbwithparts" target="new_entrez">
+             CP030989.1
+            </a>
+            Arachis hypogaea cultivar Shitouqi chromosome A07
+            <pre>
+
+product length = 3870
+Features flanking this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1431907560?from=30648623&amp;to=30649361&amp;report=gbwithparts" target="new_entrez">74462 bp at 5' side: uncharacterized protein</a>
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1431907560?from=30738718&amp;to=30739035&amp;report=gbwithparts" target="new_entrez">11026 bp at 3' side: uncharacterized protein</a>
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        30723822  .....................  30723842
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        30727691  ......................  30727670
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1820521185?from=25640112&amp;to=25641100&amp;report=gbwithparts" target="new_entrez">
+             LR778315.1
+            </a>
+            Raphanus sativus genome assembly, chromosome: 6
+            <pre>
+
+product length = 989
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        25641100  .....................  25641080
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        25640112  ......................  25640133
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;id=1516546163" target="new_entrez">
+             LR031716.1
+            </a>
+            Brassica rapa genome, scaffold: Brapa_scaffold_180
+            <pre>
+
+product length = 2536
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        71078  .....................  71058
+
+Reverse primer  1      CCTTATCATTTAGAGGAAGGAG  22
+Template        68543  ......................  68564
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;id=1516545787" target="new_entrez">
+             LR031643.1
+            </a>
+            Brassica rapa genome, scaffold: Brapa_scaffold_104
+            <pre>
+
+product length = 2232
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        13391  .....................  13371
+
+Reverse primer  1      CCTTATCATTTAGAGGAAGGAG  22
+Template        11160  ......................  11181
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1516545151?from=449470&amp;to=453080&amp;report=gbwithparts" target="new_entrez">
+             LR031592.1
+            </a>
+            Brassica rapa genome, scaffold: Brapa_scaffold_45
+            <pre>
+
+product length = 3611
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        449470  .....................  449490
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        453080  ......................  453059
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1477772549?from=13094721&amp;to=13097042&amp;report=gbwithparts" target="new_entrez">
+             CP025665.1
+            </a>
+            Ipomoea triloba cultivar NCNSP0323 chromosome 6
+            <pre>
+
+product length = 2322
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        13097042  .....................  13097022
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        13094721  ......................  13094742
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2565976843?from=53596984&amp;to=58200288&amp;report=gbwithparts" target="new_entrez">
+             OY725331.1
+            </a>
+            Inga leiocalycina genome assembly, chromosome: 12
+            <pre>
+
+product length = 1013
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        58200288  .....................  58200268
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        58199276  ......................  58199297
+
+</pre>
+            <pre>
+
+product length = 3668
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        58011101  .....................  58011081
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        58007434  ......................  58007455
+
+</pre>
+            <pre>
+
+product length = 3150
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        56346658  .....................  56346678
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        56349807  .....................  56349787
+
+</pre>
+            <pre>
+
+product length = 3560
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        55594541  .....................  55594561
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        55598100  .....................  55598080
+
+</pre>
+            <pre>
+
+product length = 2724
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        54452153  ......................  54452132
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        54449430  ......................  54449451
+
+</pre>
+            <pre>
+
+product length = 3700
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        54188847  ......................  54188826
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        54185148  ......................  54185169
+
+</pre>
+            <pre>
+
+product length = 3782
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        53600765  ......................  53600744
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        53596984  ......................  53597005
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2565975340?from=4239688&amp;to=10653252&amp;report=gbwithparts" target="new_entrez">
+             OX638248.1
+            </a>
+            Aegilops umbellulata genome assembly, chromosome: UA
+            <pre>
+
+product length = 3117
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9671107  .....................  9671127
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        9674223  ......................  9674202
+
+</pre>
+            <pre>
+
+product length = 1632
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9593321  .....................  9593341
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        9594952  ......................  9594931
+
+</pre>
+            <pre>
+
+product length = 2300
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9128204  .....................  9128224
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        9130503  ......................  9130482
+
+</pre>
+            <pre>
+
+product length = 3149
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        7683555  .....................  7683575
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        7686703  ......................  7686682
+
+</pre>
+            <pre>
+
+product length = 3855
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        5449239  .....................  5449259
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        5453093  ......................  5453072
+
+</pre>
+            <pre>
+
+product length = 3473
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        10095985  .....................  10095965
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        10092513  ......................  10092534
+
+</pre>
+            <pre>
+
+product length = 2557
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        10018060  .....................  10018040
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        10015504  ......................  10015525
+
+</pre>
+            <pre>
+
+product length = 3015
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9995298  .....................  9995278
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        9992284  ......................  9992305
+
+</pre>
+            <pre>
+
+product length = 3138
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9657926  .....................  9657906
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        9654789  ......................  9654810
+
+</pre>
+            <pre>
+
+product length = 1527
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9484335  .....................  9484315
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        9482809  ......................  9482830
+
+</pre>
+            <pre>
+
+product length = 2777
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9108148  .....................  9108128
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        9105372  ......................  9105393
+
+</pre>
+            <pre>
+
+product length = 999
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9011117  .....................  9011097
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        9010119  ......................  9010140
+
+</pre>
+            <pre>
+
+product length = 1903
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        8974620  .....................  8974600
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        8972718  ......................  8972739
+
+</pre>
+            <pre>
+
+product length = 3141
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        7833951  .....................  7833931
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        7830811  ......................  7830832
+
+</pre>
+            <pre>
+
+product length = 3846
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        7179034  .....................  7179014
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        7175189  ......................  7175210
+
+</pre>
+            <pre>
+
+product length = 3320
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        4891357  .....................  4891337
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        4888038  ......................  4888059
+
+</pre>
+            <pre>
+
+product length = 2018
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9361448  .....................  9361468
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9363465  .....................  9363445
+
+</pre>
+            <pre>
+
+product length = 3856
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        8303597  .....................  8303617
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        8307452  .....................  8307432
+
+</pre>
+            <pre>
+
+product length = 3831
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        7037381  .....................  7037401
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        7041211  .....................  7041191
+
+</pre>
+            <pre>
+
+product length = 3284
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        4410876  .....................  4410896
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        4414159  .....................  4414139
+
+</pre>
+            <pre>
+
+product length = 3889
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        4239688  .....................  4239708
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        4243576  .....................  4243556
+
+</pre>
+            <pre>
+
+product length = 2265
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        10653252  ......................  10653231
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        10650988  ......................  10651009
+
+</pre>
+            <pre>
+
+product length = 3613
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        8137764  ......................  8137743
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        8134152  ......................  8134173
+
+</pre>
+            <pre>
+
+product length = 3953
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        7149440  ......................  7149419
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        7145488  ......................  7145509
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2565448155?from=53275765&amp;to=53279712&amp;report=gbwithparts" target="new_entrez">
+             OY723410.1
+            </a>
+            Inga oerstediana genome assembly, chromosome: 12
+            <pre>
+
+product length = 3948
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        53279712  .....................  53279692
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        53275765  ......................  53275786
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2532444845?from=48956518&amp;to=48961667&amp;report=gbwithparts" target="new_entrez">
+             OY283142.1
+            </a>
+            Medicago lupulina genome assembly, chromosome: 4
+            <pre>
+
+product length = 1994
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        48956518  .....................  48956538
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        48958511  ......................  48958490
+
+</pre>
+            <pre>
+
+product length = 1994
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        48959674  ..T..................  48959694
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        48961667  ......................  48961646
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2532442601?from=33812323&amp;to=39348960&amp;report=gbwithparts" target="new_entrez">
+             OY283139.1
+            </a>
+            Medicago lupulina genome assembly, chromosome: 1
+            <pre>
+
+product length = 2703
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        38507866  .....................  38507846
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        38505164  ......................  38505185
+
+</pre>
+            <pre>
+
+product length = 2449
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        33812323  .....................  33812343
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        33814771  .....................  33814751
+
+</pre>
+            <pre>
+
+product length = 2886
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        39348960  ......................  39348939
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        39346075  ......................  39346096
+
+</pre>
+            <pre>
+
+product length = 382
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        38885395  ......................  38885374
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        38885014  ......................  38885035
+
+</pre>
+            <pre>
+
+product length = 3910
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        38417517  ......................  38417496
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        38413608  ......................  38413629
+
+</pre>
+            <pre>
+
+product length = 3027
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        38367990  ......................  38367969
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        38364964  ......................  38364985
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2531957209?from=114704&amp;to=204733&amp;report=gbwithparts" target="new_entrez">
+             OY282628.1
+            </a>
+            Phragmites australis genome assembly, chromosome: 17
+            <pre>
+
+product length = 1491
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        203243  .....................  203263
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        204733  ......................  204712
+
+</pre>
+            <pre>
+
+product length = 3276
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        117979  .....................  117959
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        114704  ......................  114725
+
+</pre>
+            <pre>
+
+product length = 2397
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        183206  ......................  183185
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        180810  ......................  180831
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2531957207?from=25705471&amp;to=25927774&amp;report=gbwithparts" target="new_entrez">
+             OY282631.1
+            </a>
+            Phragmites australis genome assembly, chromosome: 20
+            <pre>
+
+product length = 3381
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        25924394  .....................  25924414
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        25927774  .....................  25927754
+
+</pre>
+            <pre>
+
+product length = 3446
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        25708916  ......................  25708895
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        25705471  ......................  25705492
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2531952167?from=51750260&amp;to=57663030&amp;report=gbwithparts" target="new_entrez">
+             OY282520.1
+            </a>
+            Urtica urens genome assembly, chromosome: 1
+            <pre>
+
+product length = 680
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        57553769  .....................  57553749
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        57553090  ......................  57553111
+
+</pre>
+            <pre>
+
+product length = 2690
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        57452641  .....................  57452661
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        57455330  ......................  57455309
+
+</pre>
+            <pre>
+
+product length = 3899
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        55048076  .....................  55048096
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        55051974  ......................  55051953
+
+</pre>
+            <pre>
+
+product length = 2041
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        54775461  .....................  54775481
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        54777501  ......................  54777480
+
+</pre>
+            <pre>
+
+product length = 2987
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        51750260  .....................  51750280
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        51753246  ......................  51753225
+
+</pre>
+            <pre>
+
+product length = 3776
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        57659255  .....................  57659275
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        57663030  .....................  57663010
+
+</pre>
+            <pre>
+
+product length = 3957
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        57348079  .....................  57348099
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        57352035  .....................  57352015
+
+</pre>
+            <pre>
+
+product length = 2774
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        56413742  .....................  56413762
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        56416515  .....................  56416495
+
+</pre>
+            <pre>
+
+product length = 1566
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        53718076  .....................  53718096
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        53719641  .....................  53719621
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2279792712?from=14047943&amp;to=14051302&amp;report=gbwithparts" target="new_entrez">
+             CP086741.1
+            </a>
+            Arabidopsis thaliana ecotype 6024 chromosome 3 sequence
+            <pre>
+
+product length = 3360
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        14051302  .....................  14051282
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        14047943  ......................  14047964
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2279790926?from=14123177&amp;to=14190599&amp;report=gbwithparts" target="new_entrez">
+             CP086731.1
+            </a>
+            Arabidopsis thaliana ecotype 9470 chromosome 3 sequence
+            <pre>
+
+product length = 3039
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        14126215  .....................  14126195
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        14123177  ......................  14123198
+
+</pre>
+            <pre>
+
+product length = 1058
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        14190599  ....................A  14190579
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        14189542  ..G....C..............  14189563
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1273855446?from=33140480&amp;to=33142580&amp;report=gbwithparts" target="new_entrez">
+             CP023759.1
+            </a>
+            Solanum lycopersicum cultivar I-3 chromosome 3
+            <pre>
+
+product length = 2101
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        33142580  ......................  33142559
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        33140480  ......................  33140501
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;id=530279562" target="new_entrez">
+             KF184927.1
+            </a>
+            Saccharum hybrid cultivar R570 clone BAC 039D18 complete sequence
+            <pre>
+
+product length = 2118
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        25053  .....................  25073
+
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        27170  .....................  27150
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/663680780?from=30516627&amp;to=30518729&amp;report=gbwithparts" target="new_entrez">
+             HG975515.1
+            </a>
+            Solanum lycopersicum chromosome ch03, complete genome
+            <pre>
+
+product length = 2103
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        30518729  ......................  30518708
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        30516627  ......................  30516648
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2302125007?from=11656268&amp;to=12396652&amp;report=gbwithparts" target="new_entrez">
+             OX328279.1
+            </a>
+            Chamaenerion angustifolium genome assembly, chromosome: 15
+            <pre>
+
+product length = 1431
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12396652  .....................  12396632
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        12395222  ......................  12395243
+
+</pre>
+            <pre>
+
+product length = 3335
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12384002  .....................  12383982
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        12380668  ......................  12380689
+
+</pre>
+            <pre>
+
+product length = 3324
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12379503  .....................  12379483
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        12376180  ......................  12376201
+
+</pre>
+            <pre>
+
+product length = 3228
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12335169  .....................  12335149
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        12331942  ......................  12331963
+
+</pre>
+            <pre>
+
+product length = 3293
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12258791  .....................  12258771
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        12255499  ......................  12255520
+
+</pre>
+            <pre>
+
+product length = 3286
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12244246  .....................  12244226
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        12240961  ......................  12240982
+
+</pre>
+            <pre>
+
+product length = 3305
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12209588  .....................  12209568
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        12206284  ......................  12206305
+
+</pre>
+            <pre>
+
+product length = 3304
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        11659571  .....................  11659551
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        11656268  ......................  11656289
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2302109119?from=253853&amp;to=671144&amp;report=gbwithparts" target="new_entrez">
+             OX327691.1
+            </a>
+            Ailanthus altissima genome assembly, chromosome: 9
+            <pre>
+
+product length = 2551
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        522438  .....................  522458
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        524988  ......................  524967
+
+</pre>
+            <pre>
+
+product length = 2841
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        256693  .....................  256673
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        253853  ......................  253874
+
+</pre>
+            <pre>
+
+product length = 3805
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        671144  ......................  671123
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        667340  ......................  667361
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1997670487?from=29217779&amp;to=29221272&amp;report=gbwithparts" target="new_entrez">
+             HG994363.1
+            </a>
+            Brassica napus genome assembly, chromosome: A09
+            <pre>
+
+product length = 3494
+Features associated with this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1997670487?from=29218146&amp;to=29225119&amp;report=gbwithparts" target="new_entrez">unnamed protein product</a>
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        29221272  .....................  29221252
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        29217779  ......................  29217800
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1997657191?from=15575118&amp;to=15575573&amp;report=gbwithparts" target="new_entrez">
+             HG994360.1
+            </a>
+            Brassica napus genome assembly, chromosome: A06
+            <pre>
+
+product length = 456
+Features flanking this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1997657191?from=15557444&amp;to=15558495&amp;report=gbwithparts" target="new_entrez">16624 bp at 5' side: unnamed protein product</a>
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1997657191?from=15638793&amp;to=15639579&amp;report=gbwithparts" target="new_entrez">63219 bp at 3' side: unnamed protein product</a>
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        15575118  .....................  15575138
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        15575573  ......................  15575552
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2589440390?from=9881201&amp;to=9882189&amp;report=gbwithparts" target="new_entrez">
+             OY743209.1
+            </a>
+            Raphanus sativus genome assembly, chromosome: 3
+            <pre>
+
+product length = 989
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        9881201  .....................  9881221
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        9882189  ......................  9882168
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2519850351?from=3209334&amp;to=20933426&amp;report=gbwithparts" target="new_entrez">
+             OX596383.1
+            </a>
+            Tipula unca genome assembly, chromosome: 4
+            <pre>
+
+product length = 3536
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        20929891  .....................  20929911
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        20933426  .....................  20933406
+
+</pre>
+            <pre>
+
+product length = 3814
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        3209334  .....................  3209354
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        3213147  .....................  3213127
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2440392213?from=6638917&amp;to=6642491&amp;report=gbwithparts" target="new_entrez">
+             OX421313.1
+            </a>
+            Diaphora mendica genome assembly, chromosome: 3
+            <pre>
+
+product length = 3575
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        6638917  .....................  6638937
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        6642491  .....................  6642471
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2523338270?from=1056389&amp;to=1058344&amp;report=gbwithparts" target="new_entrez">
+             OX940882.1
+            </a>
+            Stratiomys singularior genome assembly, chromosome: X
+            <pre>
+
+product length = 1956
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        1056389  .....................  1056409
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        1058344  .....................  1058324
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2499447507?from=10362895&amp;to=10366023&amp;report=gbwithparts" target="new_entrez">
+             OX493411.1
+            </a>
+            Lacanobia oleracea genome assembly, chromosome: 26
+            <pre>
+
+product length = 3129
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        10362895  .....................  10362915
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        10366023  .....................  10366003
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2191748115?from=11940009&amp;to=11942782&amp;report=gbwithparts" target="new_entrez">
+             OV815999.1
+            </a>
+            Andrena minutula genome assembly, chromosome: 7
+            <pre>
+
+product length = 2774
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        11940009  .....................  11940029
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        11942782  .....................  11942762
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2560293401?from=11525751&amp;to=13992208&amp;report=gbwithparts" target="new_entrez">
+             OY720099.1
+            </a>
+            Corella eumyota genome assembly, chromosome: 3
+            <pre>
+
+product length = 958
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        13991251  .....................  13991271
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        13992208  .....................  13992188
+
+</pre>
+            <pre>
+
+product length = 3757
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12964062  .....................  12964082
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        12967818  .....................  12967798
+
+</pre>
+            <pre>
+
+product length = 3654
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        11642464  .....................  11642484
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        11646117  .....................  11646097
+
+</pre>
+            <pre>
+
+product length = 2112
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        11525751  .....................  11525771
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        11527862  .....................  11527842
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2211271101?from=302851&amp;to=306461&amp;report=gbwithparts" target="new_entrez">
+             OW051469.1
+            </a>
+            Oscheius onirici genome assembly, chromosome: II
+            <pre>
+
+product length = 3611
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        302851  .....................  302871
+
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        306461  .....................  306441
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2268673301?from=77650650&amp;to=77653971&amp;report=gbwithparts" target="new_entrez">
+             OX104120.1
+            </a>
+            Limnoperna fortunei genome assembly, chromosome: 10
+            <pre>
+
+product length = 3322
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        77650650  .....................  77650670
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        77653971  .....................  77653951
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2096161046?from=17221526&amp;to=17224527&amp;report=gbwithparts" target="new_entrez">
+             OU696664.1
+            </a>
+            Ancistrocerus nigricornis genome assembly, chromosome: 1
+            <pre>
+
+product length = 3002
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        17221526  .....................  17221546
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        17224527  .....................  17224507
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2095609480?from=36296774&amp;to=36300100&amp;report=gbwithparts" target="new_entrez">
+             OU611933.1
+            </a>
+            Harmonia axyridis genome assembly, chromosome: X
+            <pre>
+
+product length = 3327
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        36296774  .....................  36296794
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        36300100  .....................  36300080
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546771706?from=14034087&amp;to=14037529&amp;report=gbwithparts" target="new_entrez">
+             OY292391.1
+            </a>
+            Verbena officinalis genome assembly, chromosome: 7
+            <pre>
+
+product length = 3443
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        14037529  .....................  14037509
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        14034087  ....................T.  14034108
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2523338359?from=2032874&amp;to=2033384&amp;report=gbwithparts" target="new_entrez">
+             OX940967.1
+            </a>
+            Euphrasia confusa genome assembly, chromosome: 19
+            <pre>
+
+product length = 511
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        2033384  .....................C  2033363
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        2032874  ......................  2032895
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2519850225?from=33179609&amp;to=33181710&amp;report=gbwithparts" target="new_entrez">
+             OX596234.1
+            </a>
+            Salicornia ramosissima genome assembly, chromosome: 3
+            <pre>
+
+product length = 2102
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        33179609  .....................  33179629
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        33181710  .A...................  33181690
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2442578960?from=677678&amp;to=681403&amp;report=gbwithparts" target="new_entrez">
+             OX291703.1
+            </a>
+            Arabidopsis thaliana genome assembly, chromosome: 4
+            <pre>
+
+product length = 3726
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        681403  ...................A.  681383
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        677678  ......................  677699
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2311335481?from=61340925&amp;to=61341702&amp;report=gbwithparts" target="new_entrez">
+             CP106695.1
+            </a>
+            Gossypium herbaceum isolate Zhongcao1 chromosome 9
+            <pre>
+
+product length = 778
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        61341702  ......................  61341681
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        61340925  .T....................  61340946
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2031301276?from=7084253&amp;to=7088213&amp;report=gbwithparts" target="new_entrez">
+             CP073642.1
+            </a>
+            Jasminum sambac cultivar Hutoumoli linkage group Lg11
+            <pre>
+
+product length = 3961
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        7088213  .....................  7088193
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        7084253  .............T........  7084274
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067584171?from=22085802&amp;to=22088946&amp;report=gbwithparts" target="new_entrez">
+             LS974625.2
+            </a>
+            Brassica rapa genome assembly, chromosome: A09
+            <pre>
+
+product length = 3145
+Features associated with this product:
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067584171?from=22085667&amp;to=22086342&amp;report=gbwithparts" target="new_entrez">unnamed protein product</a>
+
+   <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2067584171?from=22086616&amp;to=22087403&amp;report=gbwithparts" target="new_entrez">unnamed protein product</a>
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        22088946  .....................  22088926
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        22085802  ...............A......  22085823
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2154030858?from=7172048&amp;to=7175402&amp;report=gbwithparts" target="new_entrez">
+             OK440405.1
+            </a>
+            Arabidopsis thaliana, partial genome
+            <pre>
+
+product length = 3355
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        7175402  .............G.......  7175382
+
+Reverse primer  1        CCTTATCATTTAGAGGAAGGAG  22
+Template        7172048  ......................  7172069
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1516607206?from=114250&amp;to=117757&amp;report=gbwithparts" target="new_entrez">
+             LR031899.1
+            </a>
+            Brassica oleracea HDEM genome, scaffold: Boleracea_scaffold_39
+            <pre>
+
+product length = 3508
+Forward primer  1       GGCTGCTGGCACCAGACTTGC  21
+Template        117757  T....................  117737
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        114250  ......................  114271
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;id=1516545788" target="new_entrez">
+             LR031644.1
+            </a>
+            Brassica rapa genome, scaffold: Brapa_scaffold_105
+            <pre>
+
+product length = 3655
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        99035  T....................  99055
+
+Reverse primer  1       CCTTATCATTTAGAGGAAGGAG  22
+Template        102689  ......................  102668
+
+</pre>
+            <pre>
+
+product length = 3995
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        93883  T....................  93903
+
+Reverse primer  1      CCTTATCATTTAGAGGAAGGAG  22
+Template        97877  ......................  97856
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1516514802?from=16217039&amp;to=16219264&amp;report=gbwithparts" target="new_entrez">
+             LR031571.1
+            </a>
+            Brassica rapa genome, scaffold: A01
+            <pre>
+
+product length = 2226
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        16219264  T....................  16219244
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        16217039  ......................  16217060
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1516499363?from=21514783&amp;to=21517927&amp;report=gbwithparts" target="new_entrez">
+             LR031568.1
+            </a>
+            Brassica rapa genome, scaffold: A09
+            <pre>
+
+product length = 3145
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        21517927  .....................  21517907
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        21514783  ...............A......  21514804
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/1239725809?from=17266430&amp;to=17270257&amp;report=gbwithparts" target="new_entrez">
+             CP023120.1
+            </a>
+            Lupinus angustifolius cultivar Tanjil chromosome LG-08
+            <pre>
+
+product length = 3828
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17270257  ......A...............  17270236
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        17266430  ......................  17266451
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2444877791?from=1971815&amp;to=1975287&amp;report=gbwithparts" target="new_entrez">
+             OX424520.1
+            </a>
+            Agrochola litura genome assembly, chromosome: W
+            <pre>
+
+product length = 3473
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        1971815  ...................A.  1971835
+
+Forward primer  1        GGCTGCTGGCACCAGACTTGC  21
+Template        1975287  .....................  1975267
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2321928931?from=26672591&amp;to=26675367&amp;report=gbwithparts" target="new_entrez">
+             OX359256.1
+            </a>
+            Solanum dulcamara genome assembly, chromosome: 5
+            <pre>
+
+product length = 2777
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        26672591  .......A.............  26672611
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        26675367  .....................A  26675346
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;id=2573106784" target="new_entrez">
+             AP025112.1
+            </a>
+            Eustoma grandiflorum DNA, Egra_v1_000547F, unplaced
+            <pre>
+
+product length = 2015
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        49494  ..T..................  49474
+
+Reverse primer  1      CCTTATCATTTAGAGGAAGGAG  22
+Template        47480  T.....................  47501
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;id=1516545805" target="new_entrez">
+             LR031661.1
+            </a>
+            Brassica rapa genome, scaffold: Brapa_scaffold_123
+            <pre>
+
+product length = 3644
+Forward primer  1      GGCTGCTGGCACCAGACTTGC  21
+Template        91018  T...................T  91038
+
+Reverse primer  1      CCTTATCATTTAGAGGAAGGAG  22
+Template        94661  ......................  94640
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2302088722?from=25447998&amp;to=25450371&amp;report=gbwithparts" target="new_entrez">
+             OX326968.1
+            </a>
+            Medicago arabica genome assembly, chromosome: 5
+            <pre>
+
+product length = 2374
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        25450371  ...........T.........  25450351
+
+Reverse primer  1         CCTTATCATTTAGAGGAAGGAG  22
+Template        25447998  .......T..............  25448019
+
+</pre>
+            &gt;
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/2546774157?from=36698225&amp;to=36701625&amp;report=gbwithparts" target="new_entrez">
+             OY293307.1
+            </a>
+            Orchestes rusci genome assembly, chromosome: 4
+            <pre>
+
+product length = 3401
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        36698225  ............T........  36698245
+
+Forward primer  1         GGCTGCTGGCACCAGACTTGC  21
+Template        36701625  ................A....  36701605
+
+</pre>
+           </div>
+          </div>
+         </div>
+         <!-- -->
+        </div>
+        <!--/#alignments-->
+        <div class="hidden reanlz">
+         <span>
+          If you want to allow any of the unintended targets, check the box(es) next to the ones you accept and try again to re-search for specific primers
+         </span>
+         <span>
+          <input class="submReanl" disabled="disabled" id="submReanl2" type="submit" value="Submit"/>
+         </span>
+         <a class="helplink jig-ncbitoggler ui-ncbitoggler" data-jig="ncbitoggler" data-ncbitoggler-toggles="submReanlHelp2" href="#" title="Primer-BLAST help">
+          <i class="fas fa-question-circle">
+          </i>
+          <span class="usa-sr-only">
+           Help
+          </span>
+         </a>
+         <div aria-live="assertive" class="ui-helper-reset">
+          <div class="helpbox ui-ncbitoggler-slave" id="submReanlHelp2">
+           <p>
+            Primer-BLAST can only find non-specific primers for your template since there are other targets that are similar or identical to your template.  You may choose to re-search for specific primers by allowing some of the highly similar off-targets if they are irrelevant to your PCR experiment.  For example, not all transcript variants are expressed in all tissues, or you are not concerned about the predicted transcripts (i.e., XM_ accessions), or there are redundant database entries.  Another example is, when you enter a raw sequence as PCR template rather than an accession, Primer-BLAST will likely report many off-targets.  However, some of these might be your intended target that you should choose to allow.  When Primer-BLAST does not need to avoid the highly similar off-targets in selecting unique primer regions, it typically has a much higher chance to find specific primers for your intended target.
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <!-- alignInfo -->
+      </div>
+     </div>
+     <!-- SEARCH_INFO end -->
+    </div>
+    <!-- /#content -->
+    <footer>
+     <section class="icon-section">
+      <div class="icon-section_header" id="icon-section-header">
+       Follow NCBI
+      </div>
+      <div class="grid-container container">
+       <div class="icon-section_container">
+        <a aria-label="Twitter" class="footer-icon" href="https://twitter.com/ncbi" id="footer_twitter">
+         <svg data-name="Layer 1" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+           <style>
+            .cls-11 {
+                      fill: #737373;
+                    }
+           </style>
+          </defs>
+          <title>
+           Twitter
+          </title>
+          <path class="cls-11" d="M250.11,105.48c-7,3.14-13,3.25-19.27.14,8.12-4.86,8.49-8.27,11.43-17.46a78.8,78.8,0,0,1-25,9.55,39.35,39.35,0,0,0-67,35.85,111.6,111.6,0,0,1-81-41.08A39.37,39.37,0,0,0,81.47,145a39.08,39.08,0,0,1-17.8-4.92c0,.17,0,.33,0,.5a39.32,39.32,0,0,0,31.53,38.54,39.26,39.26,0,0,1-17.75.68,39.37,39.37,0,0,0,36.72,27.3A79.07,79.07,0,0,1,56,223.34,111.31,111.31,0,0,0,116.22,241c72.3,0,111.83-59.9,111.83-111.84,0-1.71,0-3.4-.1-5.09C235.62,118.54,244.84,113.37,250.11,105.48Z">
+          </path>
+         </svg>
+        </a>
+        <a aria-label="Facebook" class="footer-icon" href="https://www.facebook.com/ncbi.nlm" id="footer_facebook">
+         <svg data-name="Layer 1" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           Facebook
+          </title>
+          <path class="cls-11" d="M210.5,115.12H171.74V97.82c0-8.14,5.39-10,9.19-10h27.14V52l-39.32-.12c-35.66,0-42.42,26.68-42.42,43.77v19.48H99.09v36.32h27.24v109h45.41v-109h35Z">
+          </path>
+         </svg>
+        </a>
+        <a aria-label="LinkedIn" class="footer-icon" href="https://www.linkedin.com/company/ncbinlm" id="footer_linkedin">
+         <svg data-name="Layer 1" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           LinkedIn
+          </title>
+          <path class="cls-11" d="M101.64,243.37H57.79v-114h43.85Zm-22-131.54h-.26c-13.25,0-21.82-10.36-21.82-21.76,0-11.65,8.84-21.15,22.33-21.15S101.7,78.72,102,90.38C102,101.77,93.4,111.83,79.63,111.83Zm100.93,52.61A17.54,17.54,0,0,0,163,182v61.39H119.18s.51-105.23,0-114H163v13a54.33,54.33,0,0,1,34.54-12.66c26,0,44.39,18.8,44.39,55.29v58.35H198.1V182A17.54,17.54,0,0,0,180.56,164.44Z">
+          </path>
+         </svg>
+        </a>
+        <a aria-label="GitHub" class="footer-icon" href="https://github.com/ncbi" id="footer_github">
+         <svg data-name="Layer 1" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+           <style>
+            .cls-11,
+                    .cls-12 {
+                      fill: #737373;
+                    }
+
+                    .cls-11 {
+                      fill-rule: evenodd;
+                    }
+           </style>
+          </defs>
+          <title>
+           GitHub
+          </title>
+          <path class="cls-11" d="M151.36,47.28a105.76,105.76,0,0,0-33.43,206.1c5.28,1,7.22-2.3,7.22-5.09,0-2.52-.09-10.85-.14-19.69-29.42,6.4-35.63-12.48-35.63-12.48-4.81-12.22-11.74-15.47-11.74-15.47-9.59-6.56.73-6.43.73-6.43,10.61.75,16.21,10.9,16.21,10.9,9.43,16.17,24.73,11.49,30.77,8.79,1-6.83,3.69-11.5,6.71-14.14C108.57,197.1,83.88,188,83.88,147.51a40.92,40.92,0,0,1,10.9-28.39c-1.1-2.66-4.72-13.42,1-28,0,0,8.88-2.84,29.09,10.84a100.26,100.26,0,0,1,53,0C198,88.3,206.9,91.14,206.9,91.14c5.76,14.56,2.14,25.32,1,28a40.87,40.87,0,0,1,10.89,28.39c0,40.62-24.74,49.56-48.29,52.18,3.79,3.28,7.17,9.71,7.17,19.58,0,14.15-.12,25.54-.12,29,0,2.82,1.9,6.11,7.26,5.07A105.76,105.76,0,0,0,151.36,47.28Z">
+          </path>
+          <path class="cls-12" d="M85.66,199.12c-.23.52-1.06.68-1.81.32s-1.2-1.06-.95-1.59,1.06-.69,1.82-.33,1.21,1.07.94,1.6Zm-1.3-1">
+          </path>
+          <path class="cls-12" d="M90,203.89c-.51.47-1.49.25-2.16-.49a1.61,1.61,0,0,1-.31-2.19c.52-.47,1.47-.25,2.17.49s.82,1.72.3,2.19Zm-1-1.08">
+          </path>
+          <path class="cls-12" d="M94.12,210c-.65.46-1.71,0-2.37-.91s-.64-2.07,0-2.52,1.7,0,2.36.89.65,2.08,0,2.54Zm0,0">
+          </path>
+          <path class="cls-12" d="M99.83,215.87c-.58.64-1.82.47-2.72-.41s-1.18-2.06-.6-2.7,1.83-.46,2.74.41,1.2,2.07.58,2.7Zm0,0">
+          </path>
+          <path class="cls-12" d="M107.71,219.29c-.26.82-1.45,1.2-2.64.85s-2-1.34-1.74-2.17,1.44-1.23,2.65-.85,2,1.32,1.73,2.17Zm0,0">
+          </path>
+          <path class="cls-12" d="M116.36,219.92c0,.87-1,1.59-2.24,1.61s-2.29-.68-2.3-1.54,1-1.59,2.26-1.61,2.28.67,2.28,1.54Zm0,0">
+          </path>
+          <path class="cls-12" d="M124.42,218.55c.15.85-.73,1.72-2,1.95s-2.37-.3-2.52-1.14.73-1.75,2-2,2.37.29,2.53,1.16Zm0,0">
+          </path>
+         </svg>
+        </a>
+        <a aria-label="Blog" class="footer-icon" href="https://ncbiinsights.ncbi.nlm.nih.gov/" id="footer_blog">
+         <svg data-name="Layer 1" id="Layer_1" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+           <style>
+            .cls-1{fill:#737373;}
+           </style>
+          </defs>
+          <path class="cls-1" d="M14,30a4,4,0,1,1-4-4,4,4,0,0,1,4,4Zm11,3A19,19,0,0,0,7.05,15a1,1,0,0,0-1,1v3a1,1,0,0,0,.93,1A14,14,0,0,1,20,33.07,1,1,0,0,0,21,34h3a1,1,0,0,0,1-1Zm9,0A28,28,0,0,0,7,6,1,1,0,0,0,6,7v3a1,1,0,0,0,1,1A23,23,0,0,1,29,33a1,1,0,0,0,1,1h3A1,1,0,0,0,34,33Z">
+          </path>
+         </svg>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="container-fluid bg-primary">
+      <div class="container pt-5">
+       <div class="row mt-3">
+        <div class="col-lg-3 col-12">
+         <p>
+          <a class="text-white" href="https://www.nlm.nih.gov/socialmedia/index.html">
+           Connect with NLM
+          </a>
+         </p>
+         <ul class="list-inline social_media">
+          <li class="list-inline-item">
+           <a aria-label="Twitter" href="https://twitter.com/NLM_NIH" rel="noopener noreferrer" target="_blank">
+            <svg style="enable-background:new 0 0 249 249;" version="1.1" viewbox="0 0 249 249" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+             <style type="text/css">
+              .st20 {
+                          fill: #FFFFFF;
+                        }
+
+                        .st30 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+             </style>
+             <title>
+              SM-Twitter
+             </title>
+             <g>
+              <g>
+               <g>
+                <path class="st20" d="M192.9,88.1c-5,2.2-9.2,2.3-13.6,0.1c5.7-3.4,6-5.8,8.1-12.3c-5.4,3.2-11.4,5.5-17.6,6.7
+                                                c-10.5-11.2-28.1-11.7-39.2-1.2c-7.2,6.8-10.2,16.9-8,26.5c-22.3-1.1-43.1-11.7-57.2-29C58,91.6,61.8,107.9,74,116
+                                                c-4.4-0.1-8.7-1.3-12.6-3.4c0,0.1,0,0.2,0,0.4c0,13.2,9.3,24.6,22.3,27.2c-4.1,1.1-8.4,1.3-12.5,0.5c3.6,11.3,14,19,25.9,19.3
+                                                c-11.6,9.1-26.4,13.2-41.1,11.5c12.7,8.1,27.4,12.5,42.5,12.5c51,0,78.9-42.2,78.9-78.9c0-1.2,0-2.4-0.1-3.6
+                                                C182.7,97.4,189.2,93.7,192.9,88.1z">
+                </path>
+               </g>
+              </g>
+              <circle class="st30" cx="124.4" cy="128.8" r="108.2">
+              </circle>
+             </g>
+            </svg>
+           </a>
+          </li>
+          <li class="list-inline-item">
+           <a aria-label="Facebook" href="https://www.facebook.com/nationallibraryofmedicine" rel="noopener noreferrer" target="_blank">
+            <svg style="enable-background:new 0 0 249 249;" version="1.1" viewbox="0 0 249 249" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+             <style type="text/css">
+              .st10 {
+                          fill: #FFFFFF;
+                        }
+
+                        .st110 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+             </style>
+             <title>
+              SM-Facebook
+             </title>
+             <g>
+              <g>
+               <path class="st10" d="M159,99.1h-24V88.4c0-5,3.3-6.2,5.7-6.2h16.8V60l-24.4-0.1c-22.1,0-26.2,16.5-26.2,27.1v12.1H90v22.5h16.9
+                                                      v67.5H135v-67.5h21.7L159,99.1z">
+               </path>
+              </g>
+             </g>
+             <circle class="st110" cx="123.6" cy="123.2" r="108.2">
+             </circle>
+            </svg>
+           </a>
+          </li>
+          <li class="list-inline-item">
+           <a aria-label="Youtube" href="https://www.youtube.com/user/NLMNIH" rel="noopener noreferrer" target="_blank">
+            <svg style="enable-background:new 0 0 249 249;" version="1.1" viewbox="0 0 249 249" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+             <title>
+              SM-Youtube
+             </title>
+             <style type="text/css">
+              .st4 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .st5 {
+                          fill: #FFFFFF;
+                        }
+             </style>
+             <circle class="st4" cx="124.2" cy="123.4" r="108.2">
+             </circle>
+             <g transform="translate(0,-952.36218)">
+              <path class="st5" d="M88.4,1037.4c-10.4,0-18.7,8.3-18.7,18.7v40.1c0,10.4,8.3,18.7,18.7,18.7h72.1c10.4,0,18.7-8.3,18.7-18.7
+                                            v-40.1c0-10.4-8.3-18.7-18.7-18.7H88.4z M115.2,1058.8l29.4,17.4l-29.4,17.4V1058.8z">
+              </path>
+             </g>
+            </svg>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-12">
+         <p class="address_footer text-white">
+          National Library of Medicine
+          <br/>
+          <a class="text-white" href="https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/@38.9959508,-77.101021,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb:0x19156f88b27635b8!8m2!3d38.9959508!4d-77.0988323" rel="noopener noreferrer" target="_blank">
+           8600 Rockville Pike
+           <br/>
+           Bethesda, MD 20894
+          </a>
+         </p>
+        </div>
+        <div class="col-lg-3 col-12 centered-lg">
+         <p>
+          <a class="text-white" href="https://www.nlm.nih.gov/web_policies.html">
+           Web Policies
+          </a>
+          <br/>
+          <a class="text-white" href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office">
+           FOIA
+          </a>
+          <br/>
+          <a class="text-white" href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html" id="vdp">
+           HHS Vulnerability Disclosure
+          </a>
+         </p>
+        </div>
+        <div class="col-lg-3 col-12 centered-lg">
+         <p>
+          <a class="supportLink text-white" href="https://support.nlm.nih.gov/">
+           Help
+          </a>
+          <br/>
+          <a class="text-white" href="https://www.nlm.nih.gov/accessibility.html">
+           Accessibility
+          </a>
+          <br/>
+          <a class="text-white" href="https://www.nlm.nih.gov/careers/careers.html">
+           Careers
+          </a>
+         </p>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 centered-lg">
+         <nav class="bottom-links">
+          <ul class="mt-3">
+           <li>
+            <a class="text-white" href="//www.nlm.nih.gov/">
+             NLM
+            </a>
+           </li>
+           <li>
+            <a class="text-white" href="https://www.nih.gov/">
+             NIH
+            </a>
+           </li>
+           <li>
+            <a class="text-white" href="https://www.hhs.gov/">
+             HHS
+            </a>
+           </li>
+           <li>
+            <a class="text-white" href="https://www.usa.gov/">
+             USA.gov
+            </a>
+           </li>
+          </ul>
+         </nav>
+        </div>
+       </div>
+      </div>
+     </section>
+    </footer>
+    <script src="js/nwds.js" type="text/javascript">
+    </script>
+    <script src="js/ncbipopup.js" type="text/javascript">
+    </script>
+    <script src="js/header.js" type="text/javascript">
+    </script>
+    <script src="js/uswds.min.js">
+    </script>
+   </div>
+   <!-- /#content-wrap -->
+  </div>
+  <!--/#wrap-->
+  <script src="/portal/portal3rc.fcgi/rlib/js/InstrumentOmnitureBaseJS/InstrumentNCBIBaseJS/InstrumentPageStarterJS.js" type="text/javascript">
+  </script>
+ </body>
+</html>

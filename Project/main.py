@@ -39,13 +39,38 @@ def extend_ambiguous_dna(seq):
 	return r
 
 
+# def extend_ambiguous_dna(seq):
+# 	degenerated_table = {
+# 		'W': ['A', 'T'],
+# 		'S': ['C', 'G'],
+# 		'M': ['A', 'C'],
+# 		'K': ['G', 'T'],
+# 		'R': ['A', 'G'],
+# 		'Y': ['C', 'T'],
+# 		'B': ['C', 'G', 'T'],
+# 		'D': ['A', 'G', 'T'],
+# 		'H': ['A', 'C', 'T'],
+# 		'V': ['A', 'C', 'G'],
+# 		'N': ['A', 'C', 'G', 'T'],
+# 	}
+
+# 	new_seq = ''
+# 	for base in seq:
+# 		if base in list(degenerated_table.keys()):
+# 			new_seq += 'N'
+# 		else:
+# 			new_seq += base
+# 	print(new_seq)
+# 	return [new_seq]
+
+
 def sep_degenerated(path):
 	for input_file in os.listdir(path):
-		if '.csv' in input_file:
-			primer_set = input_file.replace('.csv', '')
-			primers_df = pd.read_csv(f"{path}/{input_file}", sep=';')
+		if '.tsv' in input_file:
+			primer_set = input_file.replace('.tsv', '')
+			primers_df = pd.read_csv(f"{path}/{input_file}", sep='\t')
 			with open(f"{path}/{input_file}", "w") as non_degenerated:
-				non_degenerated.write("NAME;LEFT_PRIMER;RIGHT_PRIMER\n")
+				non_degenerated.write("NAME\tLEFT_PRIMER\tRIGHT_PRIMER\n")
 			
 			for index, row in primers_df.iterrows():
 				left_results = extend_ambiguous_dna(row['LEFT_PRIMER'])
@@ -56,12 +81,13 @@ def sep_degenerated(path):
 
 				if len(all_possible_pairs) == 1:
 					with open(f"{path}/{input_file}", "a") as non_degenerated:
-						non_degenerated.write(f"{row['NAME']};{row['LEFT_PRIMER']};{row['RIGHT_PRIMER']}\n")
+						non_degenerated.write(f"{row['NAME']}\t{all_possible_pairs[0][0]}\t{all_possible_pairs[0][1]}\n")
+
 				else:
-					with open(f"{path}/degenerated_{row['NAME']}.csv", "w") as f:
-						f.write("NAME;LEFT_PRIMER;RIGHT_PRIMER\n")
+					with open(f"{path}/degenerated_{row['NAME']}.tsv", "w") as f:
+						f.write("NAME\tLEFT_PRIMER\tRIGHT_PRIMER\n")
 						for pos, item in enumerate(all_possible_pairs):
-							f.write(f"{pos + 1};{item[0]};{item[1]}\n")
+							f.write(f"{pos + 1}\t{item[0]}\t{item[1]}\n")
 
 
 
@@ -70,15 +96,15 @@ def run_from_input(primers_dir):
 	sep_degenerated(primers_dir)
 
 	for input_file in os.listdir(primers_dir):
-		if '.csv' in input_file:
-			primer_set = input_file.replace('.csv', '')
-			primers_df = pd.read_csv(f"{primers_dir}/{input_file}", sep=';')
+		if '.tsv' in input_file:
+			primer_set = input_file.replace('.tsv', '')
+			primers_df = pd.read_csv(f"{primers_dir}/{input_file}", sep='\t')
 
 			if os.path.exists(f'{primers_dir}/{primer_set}') is False:
 				os.mkdir(f'{primers_dir}/{primer_set}')
 
 				if 'degenerated' in input_file and primers_df.shape[0] > 5:
-					primers_df = primers_df.sample(n=10).reset_index()
+					primers_df = primers_df.sample(n=5).reset_index()
 
 				for index, row in primers_df.iterrows():
 
@@ -94,8 +120,8 @@ def run_from_input(primers_dir):
 							'PRIMER_RIGHT_INPUT': right_primer,
 							'PRIMER_SPECIFICITY_DATABASE': 'nt', # taxids_sg
 							'SEARCH_SPECIFIC_PRIMER': True,
-							'PRIMER_PRODUCT_MIN': 70,
-							'PRIMER_PRODUCT_MAX': 1000,
+							'PRIMER_PRODUCT_MIN': 500,
+							'PRIMER_PRODUCT_MAX': 3000,
 							'PRIMER_NUM_RETURN': 10,
 							'PRIMER_MIN_TM': 57.0,
 							'PRIMER_OPT_TM': 60.0,
@@ -119,7 +145,7 @@ def run_from_input(primers_dir):
 							'WORD_SIZE': 7,
 							'MAX_CANDIDATE_PRIMER': 500,
 							'NUM_TARGETS': 20,
-							'NUM_TARGETS_WITH_PRIMERS': 1000,
+							'NUM_TARGETS_WITH_PRIMERS': 10000,
 							'MAX_TARGET_PER_TEMPLATE': 100000,
 							'PRIMER_MIN_SIZE': 15,
 							'PRIMER_OPT_SIZE': 20,
@@ -178,13 +204,9 @@ def run_from_input(primers_dir):
 
 
 if __name__ == '__main__':
-	primers_dir = 'Primers_Plantas'
+	primers_dir = 'novo'
 	run_from_input(primers_dir)
 
-# tem uns primers com um traço na frente, o que é esse traço?
-# isso aqui também acontece:
-# Reverse primer  1        CACCTCA-GGGTGTCCGAAGAACCAGAA  27
-# Template        1483744  G......G.....G..............  1483771
 
 # Verificar primers que vieram vazios
 # Eliminar os que so tem o reverse primer?
