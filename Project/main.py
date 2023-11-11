@@ -5,6 +5,7 @@ import pandas as pd
 import os
 import pymysql.cursors
 import yaml
+import chart_generator
 
 from bs4 import BeautifulSoup
 from itertools import product
@@ -211,3 +212,4 @@ def run_from_input(primers_dir):
 if __name__ == '__main__':
 	config = read_yaml('config.yaml')
 	run_from_input(config)
+	chart_generator.run(config)

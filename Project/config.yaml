@@ -1,5 +1,14 @@
 WORKING_PATH: test/
 THREADS: 12
+CHARTS:
+    species: False
+    genus: False
+    family: False
+    order: False
+    class: True
+    phylum: True
+    kingdom: False
+    superkingdom: False
 PARAMETERS:
     PRIMER_SPECIFICITY_DATABASE: nt
     SEARCH_SPECIFIC_PRIMER: True
