@@ -1,4 +1,6 @@
 
-Project/FilesBackup/*
-Project/09112023/*
-Project/novo/
+*.xlsx
+*.csv
+*.html
+*.png
+*.tsv
