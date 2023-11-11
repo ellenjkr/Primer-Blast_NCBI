@@ -24,12 +24,13 @@ class DataRetriever():
 	ncbi_taxonomy_url = 'https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi/'
 
 
-	def __init__(self, primer_params, left_primer, right_primer, saving_path):
+	def __init__(self, primer_params, left_primer, right_primer, saving_path, threads):
 		super(DataRetriever, self).__init__()
 		self.primer_params = primer_params
 		self.left_primer = left_primer
 		self.right_primer = right_primer
 		self.saving_path = saving_path
+		self.threads = threads
 		self.database_search = DataBaseSearch(self.default_tax_tags)
 
 	# Realiza a pesquisa e obtem o job key para redirecionar para a página de resultados
@@ -264,7 +265,7 @@ class DataRetriever():
 					
 					for key in binding_results[organism_acc].keys():
 						binding_results[organism_acc][key].extend(binding_info[key])
-		with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+		with concurrent.futures.ThreadPoolExecutor(max_workers=self.threads) as executor:
 			results = list(executor.map(self.database_search.get_organism_taxid, zip(unique_organisms['Nome'], unique_organisms['OcorrênciaAcc'])))
 
 		acc_report = pd.json_normalize(results)
@@ -295,7 +296,7 @@ class DataRetriever():
 		output_dict['TaxId'] = []
 		output_dict['Ocorrência'] = []
 		taxonomies = []
-		with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+		with concurrent.futures.ThreadPoolExecutor(max_workers=self.threads) as executor:
 			results = list(executor.map(self.database_search.get_taxonomy, zip(organisms['TaxId'], organisms['Ocorrência'])))
 
 		# Converte o dicionário para um dataframe
